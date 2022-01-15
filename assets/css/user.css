@@ -1,0 +1,152 @@
+
+/* 
+========================
+Profile Update 
+======================= */
+
+
+
+/*
+========================= 
+My Order 
+=======================
+
+
+
+
+
+
+/* 
+===========================
+Checkout
+==============================
+ */
+
+ .checkout-box-inner{
+  border-radius: 10px;
+  margin-bottom: 20px;
+ }
+ .checkout-box-inner1{
+background: #ff7675;
+ }
+  .checkout-box-inner2{
+background: #778beb;
+ }
+  .checkout-box-inner3{
+background: #00cec9;
+ }
+ .checkout-box-inner {
+  color: #fff;
+  padding: 50px;
+ }
+ .checkout-inner h6{
+  font-size: 25px;
+  font-weight: 600;
+position: relative;
+margin-bottom: 20px;
+z-index: 99;
+ }
+
+  .checkout-box-inner1 h6::after{
+position: absolute;
+content: " ";
+width: 60px;
+height: 60px;
+background: #e66767;
+opacity: 0.5;
+top: -38%;
+left: -10px;
+border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+z-index: -1;
+ }
+
+ .checkout-box-inner2 h6::after{
+position: absolute;
+content: " ";
+width: 60px;
+height: 60px;
+background: #546de5;
+opacity: 0.5;
+top: -38%;
+left: -10px;
+border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+z-index: -1;
+ }
+
+  .checkout-box-inner3 h6::after{
+position: absolute;
+content: " ";
+width: 60px;
+height: 60px;
+background: #0fb9b1;
+opacity: 0.5;
+top: -38%;
+left: -10px;
+border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+z-index: -1;
+ }
+ .checkout-box-inner h3{
+  margin-top: 30px;
+ }
+
+.coupon-code-inner{
+
+ margin-top: 20px;
+ }
+ .copun-btn{
+  color: #000!important;
+  margin-bottom: 20px;
+ }
+
+ /* .form-control{
+  border: 1px solid #FF6000;
+ } */
+ .checkout-wrapper .table{
+  margin: 30px 0;
+ }
+
+ .card-header{
+  background: #FFA800;
+  color: #fff;
+ }
+ .copun-card{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 10px;
+ }
+
+ .card-header{
+   display: flex;
+justify-content: center;
+align-items: center;
+ }
+ .copun-card h6{
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+ }
+ .card-footer {
+background: #fff;
+border: none;
+display: flex;
+justify-content: center;
+align-items: center;
+ }
+ .card-footer .btn{
+  color: #000!important;
+ }
+ .checkout-btn{
+   margin-bottom: 20px;
+ }
+ .card-body{
+   padding: 20px 50px;
+ }
+ .cart-total-inner{
+   margin-bottom: 30px;
+ }
+
+ /* .order-tracking-sections{
+   padding: 100px;
+ } */

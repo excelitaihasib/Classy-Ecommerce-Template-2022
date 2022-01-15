@@ -53,7 +53,7 @@
 
 
    <!-- -----------------------  Custom CSS for Sidebar and Other Pages ------------------------- -->
-   <link rel="stylesheet" href="../assets/css/custom-color-all.css">
+   <link rel="stylesheet" href="../assets/css/styles.css">
 
 
 </head>
@@ -112,7 +112,7 @@
                            <div class="category-btn-logo-container">
                               <a id="category-toggle-custom-sidemenu-button" onclick="toggleCategorySidemenu()"
                                  class="category-toggle-btn"><i class="fa fa-bars"></i></a>
-                              <a href="#" class="text-white">
+                              <a href="index.html" class="text-white">
                                  <h2>Fashion</h2>
                               </a>
                            </div>
@@ -122,10 +122,16 @@
 
                      <!-- ---------- Search with Category ------------- -->
                      <div class="search-container" id="search-box-container">
-                        <div class="search d-flex align-items-center">
+                        <div class="search d-flex">
                            <div class="category-dropdown">
-                              <button class="btn all-categories-btn">All Categories <i
-                                    class="fas fa-chevron-down"></i></button>
+                              <select class="btn all-categories-btn"> 
+                                    <option value="">All Categories</option>
+                                    <option value="">Men</option>
+                                    <option value="">Women</option>
+                                    <option value="">Jewellery</option>
+                                    <option value="">Winter</option>
+                                    <option value="">Popular</option>                                    
+                              </select>
                            </div>
                            <div class="search-input">
                               <input type="text" placeholder="Search Here.....">
@@ -218,7 +224,7 @@
                      <li><a href="#">Fatua</a></li>
                      <li><a href="#">Pant</a></li>
                      <li><a href="#">Panjabi</a></li>
-                     <li><a href="#">Jacket & Hoodie</a></li>
+                     <li><a href="#">Jacket & Hoodie</a></li>                     
                   </ul>
                </div>
             </li>
@@ -344,6 +350,16 @@
                   </ul>
                </div>
             </li>
+
+            <!-- ------- For Testing Purpose -------- -->
+            <li class="text-danger mt-5"><h6>For Testing Purpose Only!!!</h6></li>
+            <li><a href="profile.html">Profile - TEST</a></li>
+            <li><a href="checkout.html">Checkout - TEST</a></li>
+            <li><a href="order-tracking.html">Order Tracking - TEST</a></li>
+            <li><a href="sign-in.html">Sign In - TEST</a></li>
+            <li><a href="sign-up.html">Sign Up - TEST</a></li>
+            <li><a href="contact.html">Contact - TEST</a></li>
+            <!-- ------- For Testing Purpose -------- -->
          </ul>
       </div>
 
