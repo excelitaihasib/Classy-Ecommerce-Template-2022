@@ -148,17 +148,17 @@
                      <!-- ---------- Category Right Buttons ------------- -->
                      <div id="icon-block" class="icon-block">
                         <ul class="theme-color fs-5 text-white">
-                           <li class="mobile-setting me-1" onclick="openSetting()">
+                           <li class="mobile-setting" onclick="openSetting()">
                               <i class="fas fa-cog"></i>
                               <span>Settings</span>
                            </li>
-                           <li class="mobile-wishlist item-count icon-desk-none me-1" onclick="openWishlist()">
+                           <li class="mobile-wishlist item-count icon-desk-none" onclick="openWishlist()">
                               <i class="far fa-heart"></i>
                               <div class="item-count-contain inverce"> 1 </div>
                               <span>Wishlist</span>
                            </li>
                            <li class="mobile-user icon-desk-none">
-                              <a class="text-white" href="./sign-in.html"><i class="fa-solid fa-user"></i> Login</a>                              
+                              <a class="text-white" href="./sign-in.html"><i class="fa-solid fa-user"></i> Login</a>
                            </li>
                         </ul>
                      </div>
@@ -180,7 +180,9 @@
       <div id="sidemenu-container" class="sidemenu-container hide-menu">
          <ul id="category-toggle-custom-sidemenu" class="category-sidemenu">
             <div class="category-sidemenu-back-container">
-               <h3>Fashion</h3>
+               <a href="index.html">
+                  <h3 class="mb-2">Fashion</h3>
+               </a>
             </div>
 
             <li class="menu-heading">
@@ -516,7 +518,7 @@
             </section>
             <!--home slider end-->
 
-            <div class="product--category">
+            <div class="product--category p-3 p-md-5">
                <div class="row">
                   <div class="col-12">
                      <div class="product--category--wrapper">
@@ -534,7 +536,7 @@
                </div>
 
                <section
-                  class="portfolio-section grid-portfolio ratio2_3 portfolio-padding section-big-pt-space mx-md-3 mx-2 my-5">
+                  class="portfolio-section grid-portfolio ratio2_3 portfolio-padding section-big-pt-space mx-md-3 mx-2 my-3">
                   <div class="container-fluid">
                      <div class="row">
                         <div class="col-12">
@@ -546,25 +548,26 @@
                                        <div class="overlay ec-card-inner">
                                           <div class="border-portfolio">
                                              <div class="card product-port bg-transparent">
-                                                <a href="../assets/images/portfolio/grid/1.jpg">
-                                                   <img src="../assets/images/portfolio/grid/1.jpg"
+                                                <div class="image-overlay-container">
+                                                   <img src="../assets/images/product-detail/Rectangle172.png"
                                                       class="img-fluid  bg-img" alt="portfolio-image">
+                                                   <div class="overlay-background">
+                                                      <button class="btn" onclick="addItemToWishlist()"><i
+                                                            class="far fa-heart"></i></button>
+                                                      <button class="btn" data-bs-toggle="modal"
+                                                         data-bs-target="#productQuickViewModal"><i
+                                                            class="fas fa-search"></i></button>
+                                                      <button class="btn" onclick="addItemToCart()"><i
+                                                            class="fas fa-shopping-bag"></i></button>
+                                                   </div>
+                                                </div>
+                                                <a href="./productDetails.html" class="product-cont text-center pb-0">
+                                                   <h6 class="text-center fw-normal">Guljee</h6>                                                  
+                                                   <div class="mt-2">
+                                                      <span class="primary-text fw-bold"> &#2547; 2,0000.0</span>
+                                                      <span class="ms-1 text-muted"><s>&#2547; 2,0000.0</s></span>
+                                                   </div>
                                                 </a>
-                                                <div class="overlay-background">
-                                                   <button class="btn" onclick="addItemToWishlist()"><i
-                                                         class="far fa-heart"></i></button>
-                                                   <button class="btn" data-bs-toggle="modal"
-                                                      data-bs-target="#productQuickViewModal"><i
-                                                         class="fas fa-search"></i></button>
-                                                   <button class="btn" onclick="addItemToCart()"><i
-                                                         class="fas fa-shopping-bag"></i></button>
-                                                </div>
-
-                                                <div class="product-cont text-center pb-0">
-                                                   <span class="text-center text-dark d-block">Red Shopping Bag</span>
-                                                   <span class="text-center text-dark">1 Piece</span>
-                                                   <h6 class="primary-text fw-normal"> &#2547; 2,0000.0</h6>
-                                                </div>
                                              </div>
                                           </div>
                                        </div>
@@ -579,25 +582,26 @@
                                        <div class="overlay ec-card-inner">
                                           <div class="border-portfolio">
                                              <div class="card product-port bg-transparent">
-                                                <a href="../assets/images/portfolio/grid/1.jpg">
-                                                   <img src="../assets/images/portfolio/grid/1.jpg"
+                                                <div class="image-overlay-container">
+                                                   <img src="../assets/images/product-detail/Rectangle172.png"
                                                       class="img-fluid  bg-img" alt="portfolio-image">
+                                                   <div class="overlay-background">
+                                                      <button class="btn" onclick="addItemToWishlist()"><i
+                                                            class="far fa-heart"></i></button>
+                                                      <button class="btn" data-bs-toggle="modal"
+                                                         data-bs-target="#productQuickViewModal"><i
+                                                            class="fas fa-search"></i></button>
+                                                      <button class="btn" onclick="addItemToCart()"><i
+                                                            class="fas fa-shopping-bag"></i></button>
+                                                   </div>
+                                                </div>
+                                                <a href="./productDetails.html" class="product-cont text-center pb-0">
+                                                   <h6 class="text-center fw-normal">Guljee</h6>                                                  
+                                                   <div class="mt-2">
+                                                      <span class="primary-text fw-bold"> &#2547; 2,0000.0</span>
+                                                      <span class="ms-1 text-muted"><s>&#2547; 2,0000.0</s></span>
+                                                   </div>
                                                 </a>
-                                                <div class="overlay-background">
-                                                   <button class="btn" onclick="addItemToWishlist()"><i
-                                                         class="far fa-heart"></i></button>
-                                                   <button class="btn" data-bs-toggle="modal"
-                                                      data-bs-target="#productQuickViewModal"><i
-                                                         class="fas fa-search"></i></button>
-                                                   <button class="btn" onclick="addItemToCart()"><i
-                                                         class="fas fa-shopping-bag"></i></button>
-                                                </div>
-
-                                                <div class="product-cont text-center pb-0">
-                                                   <span class="text-center text-dark d-block">Red Shopping Bag</span>
-                                                   <span class="text-center text-dark">1 Piece</span>
-                                                   <h6 class="primary-text fw-normal"> &#2547; 2,0000.0</h6>
-                                                </div>
                                              </div>
                                           </div>
                                        </div>
@@ -612,25 +616,26 @@
                                        <div class="overlay ec-card-inner">
                                           <div class="border-portfolio">
                                              <div class="card product-port bg-transparent">
-                                                <a href="../assets/images/portfolio/grid/1.jpg">
-                                                   <img src="../assets/images/portfolio/grid/1.jpg"
+                                                <div class="image-overlay-container">
+                                                   <img src="../assets/images/product-detail/Rectangle172.png"
                                                       class="img-fluid  bg-img" alt="portfolio-image">
+                                                   <div class="overlay-background">
+                                                      <button class="btn" onclick="addItemToWishlist()"><i
+                                                            class="far fa-heart"></i></button>
+                                                      <button class="btn" data-bs-toggle="modal"
+                                                         data-bs-target="#productQuickViewModal"><i
+                                                            class="fas fa-search"></i></button>
+                                                      <button class="btn" onclick="addItemToCart()"><i
+                                                            class="fas fa-shopping-bag"></i></button>
+                                                   </div>
+                                                </div>
+                                                <a href="./productDetails.html" class="product-cont text-center pb-0">
+                                                   <h6 class="text-center fw-normal">Guljee</h6>                                                  
+                                                   <div class="mt-2">
+                                                      <span class="primary-text fw-bold"> &#2547; 2,0000.0</span>
+                                                      <span class="ms-1 text-muted"><s>&#2547; 2,0000.0</s></span>
+                                                   </div>
                                                 </a>
-                                                <div class="overlay-background">
-                                                   <button class="btn" onclick="addItemToWishlist()"><i
-                                                         class="far fa-heart"></i></button>
-                                                   <button class="btn" data-bs-toggle="modal"
-                                                      data-bs-target="#productQuickViewModal"><i
-                                                         class="fas fa-search"></i></button>
-                                                   <button class="btn" onclick="addItemToCart()"><i
-                                                         class="fas fa-shopping-bag"></i></button>
-                                                </div>
-
-                                                <div class="product-cont text-center pb-0">
-                                                   <span class="text-center text-dark d-block">Red Shopping Bag</span>
-                                                   <span class="text-center text-dark">1 Piece</span>
-                                                   <h6 class="primary-text fw-normal"> &#2547; 2,0000.0</h6>
-                                                </div>
                                              </div>
                                           </div>
                                        </div>
@@ -645,25 +650,26 @@
                                        <div class="overlay ec-card-inner">
                                           <div class="border-portfolio">
                                              <div class="card product-port bg-transparent">
-                                                <a href="../assets/images/portfolio/grid/1.jpg">
-                                                   <img src="../assets/images/portfolio/grid/1.jpg"
+                                                <div class="image-overlay-container">
+                                                   <img src="../assets/images/product-detail/Rectangle172.png"
                                                       class="img-fluid  bg-img" alt="portfolio-image">
+                                                   <div class="overlay-background">
+                                                      <button class="btn" onclick="addItemToWishlist()"><i
+                                                            class="far fa-heart"></i></button>
+                                                      <button class="btn" data-bs-toggle="modal"
+                                                         data-bs-target="#productQuickViewModal"><i
+                                                            class="fas fa-search"></i></button>
+                                                      <button class="btn" onclick="addItemToCart()"><i
+                                                            class="fas fa-shopping-bag"></i></button>
+                                                   </div>
+                                                </div>
+                                                <a href="./productDetails.html" class="product-cont text-center pb-0">
+                                                   <h6 class="text-center fw-normal">Guljee</h6>                                                  
+                                                   <div class="mt-2">
+                                                      <span class="primary-text fw-bold"> &#2547; 2,0000.0</span>
+                                                      <span class="ms-1 text-muted"><s>&#2547; 2,0000.0</s></span>
+                                                   </div>
                                                 </a>
-                                                <div class="overlay-background">
-                                                   <button class="btn" onclick="addItemToWishlist()"><i
-                                                         class="far fa-heart"></i></button>
-                                                   <button class="btn" data-bs-toggle="modal"
-                                                      data-bs-target="#productQuickViewModal"><i
-                                                         class="fas fa-search"></i></button>
-                                                   <button class="btn" onclick="addItemToCart()"><i
-                                                         class="fas fa-shopping-bag"></i></button>
-                                                </div>
-
-                                                <div class="product-cont text-center pb-0">
-                                                   <span class="text-center text-dark d-block">Red Shopping Bag</span>
-                                                   <span class="text-center text-dark">1 Piece</span>
-                                                   <h6 class="primary-text fw-normal"> &#2547; 2,0000.0</h6>
-                                                </div>
                                              </div>
                                           </div>
                                        </div>
@@ -678,25 +684,26 @@
                                        <div class="overlay ec-card-inner">
                                           <div class="border-portfolio">
                                              <div class="card product-port bg-transparent">
-                                                <a href="../assets/images/portfolio/grid/1.jpg">
-                                                   <img src="../assets/images/portfolio/grid/1.jpg"
+                                                <div class="image-overlay-container">
+                                                   <img src="../assets/images/product-detail/Rectangle172.png"
                                                       class="img-fluid  bg-img" alt="portfolio-image">
+                                                   <div class="overlay-background">
+                                                      <button class="btn" onclick="addItemToWishlist()"><i
+                                                            class="far fa-heart"></i></button>
+                                                      <button class="btn" data-bs-toggle="modal"
+                                                         data-bs-target="#productQuickViewModal"><i
+                                                            class="fas fa-search"></i></button>
+                                                      <button class="btn" onclick="addItemToCart()"><i
+                                                            class="fas fa-shopping-bag"></i></button>
+                                                   </div>
+                                                </div>
+                                                <a href="./productDetails.html" class="product-cont text-center pb-0">
+                                                   <h6 class="text-center fw-normal">Guljee</h6>                                                  
+                                                   <div class="mt-2">
+                                                      <span class="primary-text fw-bold"> &#2547; 2,0000.0</span>
+                                                      <span class="ms-1 text-muted"><s>&#2547; 2,0000.0</s></span>
+                                                   </div>
                                                 </a>
-                                                <div class="overlay-background">
-                                                   <button class="btn" onclick="addItemToWishlist()"><i
-                                                         class="far fa-heart"></i></button>
-                                                   <button class="btn" data-bs-toggle="modal"
-                                                      data-bs-target="#productQuickViewModal"><i
-                                                         class="fas fa-search"></i></button>
-                                                   <button class="btn" onclick="addItemToCart()"><i
-                                                         class="fas fa-shopping-bag"></i></button>
-                                                </div>
-
-                                                <div class="product-cont text-center pb-0">
-                                                   <span class="text-center text-dark d-block">Red Shopping Bag</span>
-                                                   <span class="text-center text-dark">1 Piece</span>
-                                                   <h6 class="primary-text fw-normal"> &#2547; 2,0000.0</h6>
-                                                </div>
                                              </div>
                                           </div>
                                        </div>
@@ -711,25 +718,26 @@
                                        <div class="overlay ec-card-inner">
                                           <div class="border-portfolio">
                                              <div class="card product-port bg-transparent">
-                                                <a href="../assets/images/portfolio/grid/1.jpg">
-                                                   <img src="../assets/images/portfolio/grid/1.jpg"
+                                                <div class="image-overlay-container">
+                                                   <img src="../assets/images/product-detail/Rectangle172.png"
                                                       class="img-fluid  bg-img" alt="portfolio-image">
+                                                   <div class="overlay-background">
+                                                      <button class="btn" onclick="addItemToWishlist()"><i
+                                                            class="far fa-heart"></i></button>
+                                                      <button class="btn" data-bs-toggle="modal"
+                                                         data-bs-target="#productQuickViewModal"><i
+                                                            class="fas fa-search"></i></button>
+                                                      <button class="btn" onclick="addItemToCart()"><i
+                                                            class="fas fa-shopping-bag"></i></button>
+                                                   </div>
+                                                </div>
+                                                <a href="./productDetails.html" class="product-cont text-center pb-0">
+                                                   <h6 class="text-center fw-normal">Guljee</h6>                                                  
+                                                   <div class="mt-2">
+                                                      <span class="primary-text fw-bold"> &#2547; 2,0000.0</span>
+                                                      <span class="ms-1 text-muted"><s>&#2547; 2,0000.0</s></span>
+                                                   </div>
                                                 </a>
-                                                <div class="overlay-background">
-                                                   <button class="btn" onclick="addItemToWishlist()"><i
-                                                         class="far fa-heart"></i></button>
-                                                   <button class="btn" data-bs-toggle="modal"
-                                                      data-bs-target="#productQuickViewModal"><i
-                                                         class="fas fa-search"></i></button>
-                                                   <button class="btn" onclick="addItemToCart()"><i
-                                                         class="fas fa-shopping-bag"></i></button>
-                                                </div>
-
-                                                <div class="product-cont text-center pb-0">
-                                                   <span class="text-center text-dark d-block">Red Shopping Bag</span>
-                                                   <span class="text-center text-dark">1 Piece</span>
-                                                   <h6 class="primary-text fw-normal"> &#2547; 2,0000.0</h6>
-                                                </div>
                                              </div>
                                           </div>
                                        </div>
@@ -744,25 +752,26 @@
                                        <div class="overlay ec-card-inner">
                                           <div class="border-portfolio">
                                              <div class="card product-port bg-transparent">
-                                                <a href="../assets/images/portfolio/grid/1.jpg">
-                                                   <img src="../assets/images/portfolio/grid/1.jpg"
+                                                <div class="image-overlay-container">
+                                                   <img src="../assets/images/product-detail/Rectangle172.png"
                                                       class="img-fluid  bg-img" alt="portfolio-image">
+                                                   <div class="overlay-background">
+                                                      <button class="btn" onclick="addItemToWishlist()"><i
+                                                            class="far fa-heart"></i></button>
+                                                      <button class="btn" data-bs-toggle="modal"
+                                                         data-bs-target="#productQuickViewModal"><i
+                                                            class="fas fa-search"></i></button>
+                                                      <button class="btn" onclick="addItemToCart()"><i
+                                                            class="fas fa-shopping-bag"></i></button>
+                                                   </div>
+                                                </div>
+                                                <a href="./productDetails.html" class="product-cont text-center pb-0">
+                                                   <h6 class="text-center fw-normal">Guljee</h6>                                                  
+                                                   <div class="mt-2">
+                                                      <span class="primary-text fw-bold"> &#2547; 2,0000.0</span>
+                                                      <span class="ms-1 text-muted"><s>&#2547; 2,0000.0</s></span>
+                                                   </div>
                                                 </a>
-                                                <div class="overlay-background">
-                                                   <button class="btn" onclick="addItemToWishlist()"><i
-                                                         class="far fa-heart"></i></button>
-                                                   <button class="btn" data-bs-toggle="modal"
-                                                      data-bs-target="#productQuickViewModal"><i
-                                                         class="fas fa-search"></i></button>
-                                                   <button class="btn" onclick="addItemToCart()"><i
-                                                         class="fas fa-shopping-bag"></i></button>
-                                                </div>
-
-                                                <div class="product-cont text-center pb-0">
-                                                   <span class="text-center text-dark d-block">Red Shopping Bag</span>
-                                                   <span class="text-center text-dark">1 Piece</span>
-                                                   <h6 class="primary-text fw-normal"> &#2547; 2,0000.0</h6>
-                                                </div>
                                              </div>
                                           </div>
                                        </div>
@@ -772,6 +781,115 @@
                                              to Cart</small> <i class="fas fa-shopping-cart"></i></button>
                                     </div>
                                  </div>
+                                 <div class="ec-card-md">
+                                    <div class="isotopeSelector w-100 mb-0 pb-0">
+                                       <div class="overlay ec-card-inner">
+                                          <div class="border-portfolio">
+                                             <div class="card product-port bg-transparent">
+                                                <div class="image-overlay-container">
+                                                   <img src="../assets/images/product-detail/Rectangle172.png"
+                                                      class="img-fluid  bg-img" alt="portfolio-image">
+                                                   <div class="overlay-background">
+                                                      <button class="btn" onclick="addItemToWishlist()"><i
+                                                            class="far fa-heart"></i></button>
+                                                      <button class="btn" data-bs-toggle="modal"
+                                                         data-bs-target="#productQuickViewModal"><i
+                                                            class="fas fa-search"></i></button>
+                                                      <button class="btn" onclick="addItemToCart()"><i
+                                                            class="fas fa-shopping-bag"></i></button>
+                                                   </div>
+                                                </div>
+                                                <a href="./productDetails.html" class="product-cont text-center pb-0">
+                                                   <h6 class="text-center fw-normal">Guljee</h6>                                                  
+                                                   <div class="mt-2">
+                                                      <span class="primary-text fw-bold"> &#2547; 2,0000.0</span>
+                                                      <span class="ms-1 text-muted"><s>&#2547; 2,0000.0</s></span>
+                                                   </div>
+                                                </a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="text-center mb-3">
+                                       <button onclick="addItemToCart()" class="btn btn-bg-text-primary py-0"><small>Add
+                                             to Cart</small> <i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                 </div>
+                                 <div class="ec-card-md">
+                                    <div class="isotopeSelector w-100 mb-0 pb-0">
+                                       <div class="overlay ec-card-inner">
+                                          <div class="border-portfolio">
+                                             <div class="card product-port bg-transparent">
+                                                <div class="image-overlay-container">
+                                                   <img src="../assets/images/product-detail/Rectangle172.png"
+                                                      class="img-fluid  bg-img" alt="portfolio-image">
+                                                   <div class="overlay-background">
+                                                      <button class="btn" onclick="addItemToWishlist()"><i
+                                                            class="far fa-heart"></i></button>
+                                                      <button class="btn" data-bs-toggle="modal"
+                                                         data-bs-target="#productQuickViewModal"><i
+                                                            class="fas fa-search"></i></button>
+                                                      <button class="btn" onclick="addItemToCart()"><i
+                                                            class="fas fa-shopping-bag"></i></button>
+                                                   </div>
+                                                </div>
+                                                <a href="./productDetails.html" class="product-cont text-center pb-0">
+                                                   <h6 class="text-center fw-normal">Guljee</h6>                                                  
+                                                   <div class="mt-2">
+                                                      <span class="primary-text fw-bold"> &#2547; 2,0000.0</span>
+                                                      <span class="ms-1 text-muted"><s>&#2547; 2,0000.0</s></span>
+                                                   </div>
+                                                </a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="text-center mb-3">
+                                       <button onclick="addItemToCart()" class="btn btn-bg-text-primary py-0"><small>Add
+                                             to Cart</small> <i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                 </div>
+                                 <div class="ec-card-md">
+                                    <div class="isotopeSelector w-100 mb-0 pb-0">
+                                       <div class="overlay ec-card-inner">
+                                          <div class="border-portfolio">
+                                             <div class="card product-port bg-transparent">
+                                                <div class="image-overlay-container">
+                                                   <img src="../assets/images/product-detail/Rectangle172.png"
+                                                      class="img-fluid  bg-img" alt="portfolio-image">
+                                                   <div class="overlay-background">
+                                                      <button class="btn" onclick="addItemToWishlist()"><i
+                                                            class="far fa-heart"></i></button>
+                                                      <button class="btn" data-bs-toggle="modal"
+                                                         data-bs-target="#productQuickViewModal"><i
+                                                            class="fas fa-search"></i></button>
+                                                      <button class="btn" onclick="addItemToCart()"><i
+                                                            class="fas fa-shopping-bag"></i></button>
+                                                   </div>
+                                                </div>
+                                                <a href="./productDetails.html" class="product-cont text-center pb-0">
+                                                   <h6 class="text-center fw-normal">Guljee</h6>                                                  
+                                                   <div class="mt-2">
+                                                      <span class="primary-text fw-bold"> &#2547; 2,0000.0</span>
+                                                      <span class="ms-1 text-muted"><s>&#2547; 2,0000.0</s></span>
+                                                   </div>
+                                                </a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="text-center mb-3 sub-sub-category-quantity-incr-dec">
+                                       <div class="product-quantity-inner">                                          
+                                             <button onclick="quickViewQunatityIncr(event)"><i
+                                                   class="fas fa-plus"></i></button>
+                                             <input type="text" value="1">
+                                             <button onclick="quickViewQunatityDec(event)"><i
+                                                   class="fas fa-minus"></i></button>                                          
+
+                                       </div>
+                                    </div>
+                                 </div>
+
 
 
                               </div>
@@ -995,7 +1113,8 @@
                   </li>
                   <li>
                      <div class="buttons d-flex justify-content-center">
-                        <a href="checkout.html" class="btn"><span class="btn-primary-filled px-4 py-2">PLACE ORDER</span>
+                        <a href="checkout.html" class="btn"><span class="btn-primary-filled px-4 py-2">PLACE
+                              ORDER</span>
                            <span class="btn-secondary-filled px-2 py-2">$1050.00</span></a>
                      </div>
                   </li>
@@ -1697,7 +1816,7 @@
    <!-- add to  setting bar  end-->
 
    <!-- notification product -->
-   <div class="product-notification" id="dismiss">
+   <!-- <div class="product-notification" id="dismiss">
       <span onclick="dismiss();" class="btn-close" aria-hidden="true"></span>
       <div class="media">
          <img class="me-2" src="../assets/images/mega-store/hot-deal/3.jpg" alt="Generic placeholder image">
@@ -1706,7 +1825,7 @@
             Cras sit amet nibh libero, in gravida nulla.
          </div>
       </div>
-   </div>
+   </div> -->
    <!-- notification product -->
 
 
@@ -1735,13 +1854,13 @@
                         class="far fa-times-circle"></i></button>
                </div>
                <div class="row">
-                  <div class="col-md-5 col-sm-12 col-12">
+                  <div class="col-lg-5 col-sm-12 col-12">
                      <img id="productQuickViewModalDisplayImage" src="../assets/images/products/quickview.png"
-                        class="img-fluid h-100" alt="">
+                        class="img-fluid product-quickview-image" alt="">
                   </div>
-                  <div class="col-md-7 col-sm-12 col-12">
+                  <div class="col-lg-7 col-sm-12 col-12 col-12">
                      <div class="row h-100 px-2 py-4">
-                        <div class="image-list col-md-2">
+                        <div class="image-list col-lg-2">
                            <div class="column">
                               <img height="70" width="90" src="../assets/images/products/quickview.png"
                                  class="img-fluid" alt="Nature" onclick="changeQuickViewImage(this);">
@@ -1760,7 +1879,7 @@
                            </div>
                         </div>
 
-                        <div class="product-details col-md-10 px-4">
+                        <div class="product-details col-lg-10 px-4 col-12">
                            <h3 class="mb-3 product-title">T- Shirt</h3>
                            <h6 class="fw-bold">
                               <span class="text-dark me-1">&#2547; 2,0000.0</span>
@@ -1840,7 +1959,7 @@
                            <div class="cart-details-btn py-3">
                               <button onclick="addItemToCart()" class="btn btn-primary-filled me-3"><i
                                     class="fas fa-cart-plus me-2"></i>Add To Cart</button>
-                              <button class="btn btn-primary-filled">Details</button>
+                              <a href="./productDetails.html" class="btn btn-primary-filled">Details</a>
                            </div>
                         </div>
                      </div>

@@ -13292,7 +13292,7 @@ background: black;
     color: white; }
 
 .portfolio-section .isotopeSelector {
-  float: left;
+  /* float: left; */
   position: relative; }
   .portfolio-section .isotopeSelector .overlay {
     position: relative;

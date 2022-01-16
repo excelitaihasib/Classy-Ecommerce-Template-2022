@@ -148,17 +148,17 @@
                      <!-- ---------- Category Right Buttons ------------- -->
                      <div id="icon-block" class="icon-block">
                         <ul class="theme-color fs-5 text-white">
-                           <li class="mobile-setting me-1" onclick="openSetting()">
+                           <li class="mobile-setting" onclick="openSetting()">
                               <i class="fas fa-cog"></i>
                               <span>Settings</span>
                            </li>
-                           <li class="mobile-wishlist item-count icon-desk-none me-1" onclick="openWishlist()">
+                           <li class="mobile-wishlist item-count icon-desk-none" onclick="openWishlist()">
                               <i class="far fa-heart"></i>
                               <div class="item-count-contain inverce"> 1 </div>
                               <span>Wishlist</span>
                            </li>
                            <li class="mobile-user icon-desk-none">
-                              <a class="text-white" href="./sign-in.html"><i class="fa-solid fa-user"></i> Login</a>                              
+                              <a class="text-white" href="./sign-in.html"><i class="fa-solid fa-user"></i> Login</a>
                            </li>
                         </ul>
                      </div>
@@ -179,8 +179,10 @@
    <main class="main-body">
       <div id="sidemenu-container" class="sidemenu-container hide-menu">
          <ul id="category-toggle-custom-sidemenu" class="category-sidemenu">
-            <div class="category-sidemenu-back-container">
-               <h3>Fashion</h3>
+              <div class="category-sidemenu-back-container">
+               <a href="index.html">
+                  <h3 class="mb-2">Fashion</h3>
+               </a>               
             </div>
 
             <li class="menu-heading">
@@ -356,8 +358,8 @@
 
 
       <section class="main-content category-closed" id="main-content">
-         <div class="container-fluid profile px-md-5 px-3 mt-3">
-            <div class="d-md-flex align-items-start">
+         <div class="container-fluid profile mt-3 px-0">
+            <div class="d-md-flex align-items-start px-md-5 px-3 ">
                <div class="">
                   <div>
                      <div class="user-profile-image d-flex justify-content-center">
@@ -390,6 +392,9 @@
                      <button class="btn" id="v-pills-my-wishlist-tab" data-bs-toggle="pill"
                         data-bs-target="#v-pills-my-wishlist" type="button" role="tab"
                         aria-controls="v-pills-my-wishlist" aria-selected="false">My Wishlist</button>
+                     <button class="btn" id="v-pills-track-order-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-track-order" type="button" role="tab"
+                        aria-controls="v-pills-track-order" aria-selected="false">Order Tracking</button>
                      <button class="btn" id="v-pills-change-password-tab" data-bs-toggle="pill"
                         data-bs-target="#v-pills-change-password" type="button" role="tab"
                         aria-controls="v-pills-change-password" aria-selected="false">Change Password</button>
@@ -819,6 +824,11 @@
                   </div>
 
 
+                  <!-- --------------------------Order Tracking---------------------------- -->
+                  <div class="tab-pane fade" id="v-pills-track-order" role="tabpanel"
+                     aria-labelledby="v-pills-track-order-tab">
+                     <h2>Order Tracking</h2>
+                  </div>
                   <!-- --------------------------Change Password ---------------------------- -->
                   <div class="tab-pane fade" id="v-pills-change-password" role="tabpanel"
                      aria-labelledby="v-pills-change-password-tab">
@@ -1071,7 +1081,8 @@
                   </li>
                   <li>
                      <div class="buttons d-flex justify-content-center">
-                        <a href="checkout.html" class="btn"><span class="btn-primary-filled px-4 py-2">PLACE ORDER</span>
+                        <a href="checkout.html" class="btn"><span class="btn-primary-filled px-4 py-2">PLACE
+                              ORDER</span>
                            <span class="btn-secondary-filled px-2 py-2">$1050.00</span></a>
                      </div>
                   </li>
@@ -1773,7 +1784,7 @@
    <!-- add to  setting bar  end-->
 
    <!-- notification product -->
-   <div class="product-notification" id="dismiss">
+    <!-- <div class="product-notification" id="dismiss">
       <span onclick="dismiss();" class="btn-close" aria-hidden="true"></span>
       <div class="media">
          <img class="me-2" src="../assets/images/mega-store/hot-deal/3.jpg" alt="Generic placeholder image">
@@ -1782,7 +1793,8 @@
             Cras sit amet nibh libero, in gravida nulla.
          </div>
       </div>
-   </div>
+   </div> -->
+  
    <!-- notification product -->
 
 
@@ -1916,7 +1928,7 @@
                            <div class="cart-details-btn py-3">
                               <button onclick="addItemToCart()" class="btn btn-primary-filled me-3"><i
                                     class="fas fa-cart-plus me-2"></i>Add To Cart</button>
-                              <button class="btn btn-primary-filled">Details</button>
+                              <a href="./productDetails.html" class="btn btn-primary-filled">Details</a>
                            </div>
                         </div>
                      </div>

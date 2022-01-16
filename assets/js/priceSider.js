@@ -8,7 +8,7 @@ function getCategoryPriceSliderValue(){
     if( slide1 > slide2 ){ let tmp = slide2; slide2 = slide1; slide1 = tmp; }
     
     let displayElement = parent.getElementsByClassName("rangeValues")[0];
-        displayElement.innerHTML = "$" + slide1 + " - $" + slide2;
+        displayElement.innerHTML = "৳ " + slide1 + " - ৳ " + slide2;
   }
   
   window.onload = function(){

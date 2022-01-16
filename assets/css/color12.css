@@ -13121,7 +13121,7 @@ ul.sosiyal {
     color: white; }
 
 .portfolio-section .isotopeSelector {
-  float: left;
+  /* float: left; */
   position: relative; }
   .portfolio-section .isotopeSelector .overlay {
     position: relative;
@@ -13140,8 +13140,8 @@ ul.sosiyal {
 .portfolio-section .isotopeSelector .overlay-background {
   -webkit-transform: scale(0);
           transform: scale(0);
-  -webkit-transition: all .4s ease;
-  transition: all .4s ease; }
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease; }
   .portfolio-section .isotopeSelector .overlay-background i {
     position: absolute;
     top: 50%;

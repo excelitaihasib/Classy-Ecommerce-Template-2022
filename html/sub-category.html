@@ -148,11 +148,11 @@
                      <!-- ---------- Category Right Buttons ------------- -->
                      <div id="icon-block" class="icon-block">
                         <ul class="theme-color fs-5 text-white">
-                           <li class="mobile-setting me-1" onclick="openSetting()">
+                           <li class="mobile-setting" onclick="openSetting()">
                               <i class="fas fa-cog"></i>
                               <span>Settings</span>
                            </li>
-                           <li class="mobile-wishlist item-count icon-desk-none me-1" onclick="openWishlist()">
+                           <li class="mobile-wishlist item-count icon-desk-none" onclick="openWishlist()">
                               <i class="far fa-heart"></i>
                               <div class="item-count-contain inverce"> 1 </div>
                               <span>Wishlist</span>
@@ -179,8 +179,10 @@
    <main class="main-body">
       <div id="sidemenu-container" class="sidemenu-container hide-menu">
          <ul id="category-toggle-custom-sidemenu" class="category-sidemenu">
-            <div class="category-sidemenu-back-container">
-               <h3>Fashion</h3>
+              <div class="category-sidemenu-back-container">
+               <a href="index.html">
+                  <h3 class="mb-2">Fashion</h3>
+               </a>               
             </div>
 
             <li class="menu-heading">
@@ -517,13 +519,13 @@
 
 
             <!-- product category starts -->
-            <section class="product--category">
+            <section class="product--category p-3 p-md-5">
                <div class="container-fluid">
                   <div class="row">
                      <div class="col-12">
                         <div class="product--category--wrapper">
                            <!-- product--category--sortby-select ends -->
-                           <div class="product--category--header">
+                           <div class="product--category--header mb-4">
                               <h6>
                                  <a href="megastore.html">Home ></a>
                                  <a href="category.html">Women ></a>
@@ -1499,7 +1501,7 @@
    <!-- add to  setting bar  end-->
 
    <!-- notification product -->
-   <div class="product-notification" id="dismiss">
+    <!-- <div class="product-notification" id="dismiss">
       <span onclick="dismiss();" class="btn-close" aria-hidden="true"></span>
       <div class="media">
          <img class="me-2" src="../assets/images/mega-store/hot-deal/3.jpg" alt="Generic placeholder image">
@@ -1508,7 +1510,7 @@
             Cras sit amet nibh libero, in gravida nulla.
          </div>
       </div>
-   </div>
+   </div> -->
    <!-- notification product -->
 
 
@@ -1642,7 +1644,7 @@
                            <div class="cart-details-btn py-3">
                               <button onclick="addItemToCart()" class="btn btn-primary-filled me-3"><i
                                     class="fas fa-cart-plus me-2"></i>Add To Cart</button>
-                              <button class="btn btn-primary-filled">Details</button>
+                              <a href="./productDetails.html" class="btn btn-primary-filled">Details</a>
                            </div>
                         </div>
                      </div>

@@ -148,18 +148,18 @@
                      <!-- ---------- Category Right Buttons ------------- -->
                      <div id="icon-block" class="icon-block">
                         <ul class="theme-color fs-5 text-white">
-                           <li class="mobile-setting me-1" onclick="openSetting()">
+                           <li class="mobile-setting" onclick="openSetting()">
                               <i class="fas fa-cog"></i>
                               <span>Settings</span>
                            </li>
-                           <li class="mobile-wishlist item-count icon-desk-none me-1" onclick="openWishlist()">
+                           <li class="mobile-wishlist item-count icon-desk-none" onclick="openWishlist()">
                               <i class="far fa-heart"></i>
                               <div class="item-count-contain inverce"> 1 </div>
                               <span>Wishlist</span>
                            </li>
                            <li class="mobile-user icon-desk-none">
-                              <a class="text-white" href="./sign-in.html"><i class="fa-solid fa-user"></i> Login</a>                              
-                           </li>                           
+                              <a class="text-white" href="./sign-in.html"><i class="fa-solid fa-user"></i> Login</a>
+                           </li>
                         </ul>
                      </div>
 
@@ -180,7 +180,9 @@
       <div id="sidemenu-container" class="sidemenu-container hide-menu">
          <ul id="category-toggle-custom-sidemenu" class="category-sidemenu">
             <div class="category-sidemenu-back-container">
-               <h3>Fashion</h3>
+               <a href="index.html">
+                  <h3 class="mb-2">Fashion</h3>
+               </a>
             </div>
 
             <li class="menu-heading">
@@ -525,20 +527,17 @@
                            <div class="filter--contain">
                               <button class="filter--button" onclick="categoryFilterToggle()" id="myBtn">
                                  <i class="fas fa-filter"></i>
-                                 <span>filters</span>
+                                 <span>Filters</span>
                                  <i class="fas fa-caret-down"></i>
                               </button>
                               <span id="dots"></span>
                               <div class="button--info" id="more">
-                                 <div class="row">
+                                 <div class="row bg-white p-2 p-md-5">
                                     <div class="button--content">
                                        <div class="col-12">
                                           <div class="container-fluid">
                                              <div class="row">
-                                                <div class="col-lg-2">
-
-                                                </div>
-                                                <div class="col-lg-3">
+                                                <div class="col-md-4">
                                                    <h4>By Categories</h4>
                                                    <ul>
                                                       <li><input type="checkbox"> Men</li>
@@ -548,16 +547,8 @@
                                                       <li><input type="checkbox"> Winter Collection</li>
                                                       <li><input type="checkbox"> Brands</li>
                                                    </ul>
-                                                   <button class="button--2">
-                                                      <i class="fas fa-filter"></i>
-                                                      filter
-                                                   </button>
-                                                   <button class="button--2">
-                                                      <i class="fas fa-sync-alt"></i>
-                                                      Clear all filters
-                                                   </button>
                                                 </div>
-                                                <div class="col-lg-3 ">
+                                                <div class="col-md-4">
                                                    <h4>By Brands</h4>
                                                    <ul>
                                                       <li><input type="checkbox"> Aarong</li>
@@ -568,31 +559,34 @@
                                                       <li><input type="checkbox"> Anjan's</li>
                                                    </ul>
                                                 </div>
-                                                <div class="col-lg-3 ">
+                                                <div class="col-md-4">
                                                    <div data-role="page">
                                                       <div data-role="header">
                                                          <h4>By Price</h4>
                                                       </div>
                                                       <div class="range-slider">
-                                                         <span class="rangeValues"></span>
+                                                        
                                                          <input value="1000" min="1000" max="50000" step="500"
                                                             type="range">
                                                          <input value="50000" min="1000" max="50000" step="500"
                                                             type="range">
+                                                         
+                                                         <div class="pt-3">
+                                                            <span>Range: </span><span class="rangeValues"></span>
+                                                         </div>                                                         
                                                       </div>
-
-                                                      <!-- <div data-role="main" class="ui-content">
-                                          <form method="post" action="/action_page_post.php">
-                                            <div data-role="rangeslider">
-                                              <label for="price-min">Price:</label>
-                                              <input type="range" name="price-min" id="price-min" value="200" min="0" max="4000">
-                                              <p>Range: 0.00 - 2,5000.0</p>
-                                            </div>
-                                              <input class="button--3" type="submit" data-inline="true" value="Search">
-                                            </form>
-                                        </div> -->
                                                    </div>
                                                 </div>
+                                             </div>
+                                             <div class="mt-3">
+                                                <button class="btn btn-primary-filled px-4">
+                                                   <i class="fas fa-filter text-white"></i>
+                                                   Filter
+                                                </button>
+                                                <button class="btn btn-primary-filled px-4">
+                                                   <i class="fas fa-sync-alt text-white"></i>
+                                                   Clear All Filters
+                                                </button>
                                              </div>
                                           </div>
                                        </div>
@@ -611,124 +605,117 @@
 
 
             <!-- product category starts -->
-            <section class="product--category">
+            <section class="product--category p-3">
                <div class="container-fluid">
-                  <div class="row">
-                     <div class="col-12">
-                        <div class="product--category--wrapper">
-                           <div class="product--category--sortby-select">
-                              <div class="sortby--dropdown">
-                                 <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                                    <option selected>Sort by:</option>
-                                    <option value="1">Oldest</option>
-                                    <option value="1">Newest</option>
-                                    <option value="1">Price: Low to High</option>
-                                    <option value="1">Price:High to Low</option>
-                                    <option value="1">Name: A-Z</option>
-                                    <option value="1">Name: Z-A</option>
-                                    <option value="2">Rating: Low to High</option>
-                                    <option value="2">Rating: High to Low</option>
-                                 </select>
-
-                              </div>
-                              <!-- end sortby--dropdown  -->
-                           </div>
-                           <!-- product--category--sortby-select ends -->
-                           <div class="product--category--header">
-                              <h6>
-                                 <a href="megastore.html">Home ></a>
-                                 Women
-                              </h6>
-                           </div>
-                           <!-- end product--category--header  -->
-
-
+                  <div class="row mb-5">
+                     <div class="col-md-6 p-2">
+                        <div class="product--category--header">
+                           <h6>
+                              <a href="index.html">Home ></a>
+                              Women
+                           </h6>
                         </div>
                      </div>
-                  </div>
-
-
-                  <!-- product ietm starts  -->
-                  <div class="product--items">
-                     <div class="ec-card-group">
-                        <div class="ec-card-lg">
-                           <a href="./sub-category.html">
-                              <div class="ec-card-inner">
-                                 <img class="img-fluid" src="../assets/images/newCategory/Rectangle 149.png" alt="">
-                                 <p>kameez</p>
-                              </div>
-                           </a>
-                        </div>
-                        <div class="ec-card-lg">
-                           <a href="./sub-category.html">
-                              <div class="ec-card-inner">
-                                 <img class="img-fluid" src="../assets/images/newCategory/Rectangle 150.png" alt="">
-                                 <p>kameez</p>
-                              </div>
-                           </a>
-
-                        </div>
-                        <div class="ec-card-lg">
-                           <a href="./sub-category.html">
-                              <div class="ec-card-inner">
-                                 <img class="img-fluid" src="../assets/images/newCategory/Rectangle 151.png" alt="">
-                                 <p>kameez</p>
-                              </div>
-                           </a>
-                        </div>
-                        <div class="ec-card-lg">
-                           <a href="./sub-category.html">
-                              <div class="ec-card-inner">
-                                 <img class="img-fluid" src="../assets/images/newCategory/Rectangle 152.png" alt="">
-                                 <p>kameez</p>
-                              </div>
-                           </a>
-
-                        </div>
-                        <div class="ec-card-lg">
-                           <a href="./sub-category.html">
-                              <div class="ec-card-inner">
-                                 <img class="img-fluid" src="../assets/images/newCategory/Rectangle 153.png" alt="">
-                                 <p>kameez</p>
-                              </div>
-                           </a>
-
-                        </div>
-                        <div class="ec-card-lg">
-                           <a href="./sub-category.html">
-                              <div class="ec-card-inner">
-                                 <img class="img-fluid" src="../assets/images/newCategory/Rectangle 154.png" alt="">
-                                 <p>kameez</p>
-                              </div>
-                           </a>
-
-                        </div>
-                        <div class="ec-card-lg">
-                           <a href="./sub-category.html">
-                              <div class="ec-card-inner">
-                                 <img class="img-fluid" src="../assets/images/newCategory/Rectangle 155.png" alt="">
-                                 <p>kameez</p>
-                              </div>
-                           </a>
-
-                        </div>
-                        <div class="ec-card-lg">
-                           <a href="./sub-category.html">
-                              <div class="ec-card-inner">
-                                 <img class="img-fluid" src="../assets/images/newCategory/Rectangle 156.png" alt="">
-                                 <p>kameez</p>
-                              </div>
-                           </a>
+                     <div class="col-md-6 p-2 d-md-flex justify-content-md-end">
+                        <div class="sortby--dropdown">
+                           <select class="form-select form-select" aria-label=".form-select-lg example">
+                              <option selected>Sort by:</option>
+                              <option value="1">Oldest</option>
+                              <option value="1">Newest</option>
+                              <option value="1">Price: Low to High</option>
+                              <option value="1">Price:High to Low</option>
+                              <option value="1">Name: A-Z</option>
+                              <option value="1">Name: Z-A</option>
+                              <option value="2">Rating: Low to High</option>
+                              <option value="2">Rating: High to Low</option>
+                           </select>
                         </div>
                      </div>
-                     <div class="container-fluid">
-
-                     </div>
-
                   </div>
                </div>
-               <!-- product ietm edns  -->
-               <!-- end product--category--items--inner  -->
+
+
+               <!-- product ietm starts  -->
+               <div class="product--items">
+                  <div class="ec-card-group">
+                     <div class="ec-card-lg">
+                        <a href="./sub-category.html">
+                           <div class="ec-card-inner">
+                              <img class="img-fluid" src="../assets/images/newCategory/Rectangle 149.png" alt="">
+                              <p>kameez</p>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="ec-card-lg">
+                        <a href="./sub-category.html">
+                           <div class="ec-card-inner">
+                              <img class="img-fluid" src="../assets/images/newCategory/Rectangle 150.png" alt="">
+                              <p>kameez</p>
+                           </div>
+                        </a>
+
+                     </div>
+                     <div class="ec-card-lg">
+                        <a href="./sub-category.html">
+                           <div class="ec-card-inner">
+                              <img class="img-fluid" src="../assets/images/newCategory/Rectangle 151.png" alt="">
+                              <p>kameez</p>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="ec-card-lg">
+                        <a href="./sub-category.html">
+                           <div class="ec-card-inner">
+                              <img class="img-fluid" src="../assets/images/newCategory/Rectangle 152.png" alt="">
+                              <p>kameez</p>
+                           </div>
+                        </a>
+
+                     </div>
+                     <div class="ec-card-lg">
+                        <a href="./sub-category.html">
+                           <div class="ec-card-inner">
+                              <img class="img-fluid" src="../assets/images/newCategory/Rectangle 153.png" alt="">
+                              <p>kameez</p>
+                           </div>
+                        </a>
+
+                     </div>
+                     <div class="ec-card-lg">
+                        <a href="./sub-category.html">
+                           <div class="ec-card-inner">
+                              <img class="img-fluid" src="../assets/images/newCategory/Rectangle 154.png" alt="">
+                              <p>kameez</p>
+                           </div>
+                        </a>
+
+                     </div>
+                     <div class="ec-card-lg">
+                        <a href="./sub-category.html">
+                           <div class="ec-card-inner">
+                              <img class="img-fluid" src="../assets/images/newCategory/Rectangle 155.png" alt="">
+                              <p>kameez</p>
+                           </div>
+                        </a>
+
+                     </div>
+                     <div class="ec-card-lg">
+                        <a href="./sub-category.html">
+                           <div class="ec-card-inner">
+                              <img class="img-fluid" src="../assets/images/newCategory/Rectangle 156.png" alt="">
+                              <p>kameez</p>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="container-fluid">
+
+                  </div>
+
+               </div>
+         </div>
+         <!-- product ietm edns  -->
+         <!-- end product--category--items--inner  -->
          </div>
 
          <!-- footer start -->
@@ -941,7 +928,8 @@
                   </li>
                   <li>
                      <div class="buttons d-flex justify-content-center">
-                        <a href="checkout.html" class="btn"><span class="btn-primary-filled px-4 py-2">PLACE ORDER</span>
+                        <a href="checkout.html" class="btn"><span class="btn-primary-filled px-4 py-2">PLACE
+                              ORDER</span>
                            <span class="btn-secondary-filled px-2 py-2">$1050.00</span></a>
                      </div>
                   </li>
@@ -1643,7 +1631,7 @@
    <!-- add to  setting bar  end-->
 
    <!-- notification product -->
-   <div class="product-notification" id="dismiss">
+    <!-- <div class="product-notification" id="dismiss">
       <span onclick="dismiss();" class="btn-close" aria-hidden="true"></span>
       <div class="media">
          <img class="me-2" src="../assets/images/mega-store/hot-deal/3.jpg" alt="Generic placeholder image">
@@ -1652,7 +1640,7 @@
             Cras sit amet nibh libero, in gravida nulla.
          </div>
       </div>
-   </div>
+   </div> -->
    <!-- notification product -->
 
 
@@ -1786,7 +1774,7 @@
                            <div class="cart-details-btn py-3">
                               <button onclick="addItemToCart()" class="btn btn-primary-filled me-3"><i
                                     class="fas fa-cart-plus me-2"></i>Add To Cart</button>
-                              <button class="btn btn-primary-filled">Details</button>
+                              <a href="./productDetails.html" class="btn btn-primary-filled">Details</a>
                            </div>
                         </div>
                      </div>

@@ -54,7 +54,7 @@
 
    <!-- -----------------------  Custom CSS for Sidebar and Other Pages ------------------------- -->
    <link rel="stylesheet" href="../assets/css/styles.css">
-
+   <link rel="stylesheet" href="../assets//css/productDetail.css">
 
 
 </head>
@@ -148,17 +148,17 @@
                      <!-- ---------- Category Right Buttons ------------- -->
                      <div id="icon-block" class="icon-block">
                         <ul class="theme-color fs-5 text-white">
-                           <li class="mobile-setting me-1" onclick="openSetting()">
+                           <li class="mobile-setting" onclick="openSetting()">
                               <i class="fas fa-cog"></i>
                               <span>Settings</span>
                            </li>
-                           <li class="mobile-wishlist item-count icon-desk-none me-1" onclick="openWishlist()">
+                           <li class="mobile-wishlist item-count icon-desk-none" onclick="openWishlist()">
                               <i class="far fa-heart"></i>
                               <div class="item-count-contain inverce"> 1 </div>
                               <span>Wishlist</span>
                            </li>
                            <li class="mobile-user icon-desk-none">
-                              <a class="text-white" href="./sign-in.html"><i class="fa-solid fa-user"></i> Login</a>                              
+                              <a class="text-white" href="./sign-in.html"><i class="fa-solid fa-user"></i> Login</a>
                            </li>
                         </ul>
                      </div>
@@ -180,7 +180,9 @@
       <div id="sidemenu-container" class="sidemenu-container hide-menu">
          <ul id="category-toggle-custom-sidemenu" class="category-sidemenu">
             <div class="category-sidemenu-back-container">
-               <h3>Fashion</h3>
+               <a href="index.html">
+                  <h3 class="mb-2">Fashion</h3>
+               </a>
             </div>
 
             <li class="menu-heading">
@@ -359,7 +361,7 @@
          <div class="container-fluid profile px-md-5 px-3 mt-3">
 
             <!-- breadcrumb start -->
-            <div class="breadcrumb-main container">
+            <div class="breadcrumb-main">
                <ul>
                   <li>Home </li>
                   <li><i class="fas fa-angle-right"></i></li>
@@ -371,75 +373,60 @@
                   <li><i class="fas fa-angle-right"></i></li>
                   <li>Guljee</li>
                </ul>
-               <!-- <div class="container">
-        <div class="row">
-            <div class="col">
-                <div class="breadcrumb-contain">
-                    <div>
-                        <h2>product</h2>
-                        <ul>
-                            <li><a href="index.html">home</a></li>
-                            <li><i class="fa fa-angle-double-right"></i></li>
-                            <li><a href="javascript:void(0)">product</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
             </div>
             <!-- breadcrumb End -->
 
             <!-- section start -->
-            <section class="section-big-pt-space container b-g-light">
+            <section class="section-big-pt-space container-fluid b-g-light">
                <div class="collection-wrapper">
                   <div class="custom-container">
                      <div class="row">
-                        <div class="col-lg-6">
-                           <div class="product-slick">
-                              <div><img src="../assets/images/product-detail/Rec" alt=""
-                                    class="img-fluid  image_zoom_cls-0">
-                              </div>
-                              <div><img src="../assets/images/product-detail/Rectangle 172.png" alt=""
+                        <div class="col-lg-4 p-4">
+                           <div class="product-slick no-arrow">
+                              <div><img src="../assets/images/product-sidebar/001.jpg" alt=""
+                                    class="img-fluid  image_zoom_cls-0"></div>
+                              <div><img src="../assets/images/product-sidebar/002.jpg" alt=""
                                     class="img-fluid  image_zoom_cls-1"></div>
-                              <div><img src="../assets/images/product-detail/Rectangle 172.png" alt=""
+                              <div><img src="../assets/images/product-sidebar/003.jpg" alt=""
                                     class="img-fluid  image_zoom_cls-2"></div>
-                              <div><img src="../assets/images/product-detail/Rectangle 172.png" alt=""
+                              <div><img src="../assets/images/product-sidebar/004.jpg" alt=""
                                     class="img-fluid  image_zoom_cls-3"></div>
                            </div>
                            <div class="row">
                               <div class="col-12 p-0">
                                  <div class="slider-nav">
-                                    <div><img src="../assets/images/product-detail/Rectangle 176.png" alt=""
-                                          class="img-fluid w-100 "></div>
-                                    <div><img src="../assets/images/product-detail/Rectangle 174.png" alt=""
-                                          class="img-fluid w-100 "></div>
-                                    <div><img src="../assets/images/product-detail/Rectangle 173.png" alt=""
-                                          class="img-fluid w-100"></div>
-                                    <div><img src="../assets/images/product-detail/Rectangle 175.png" alt=""
-                                          class="img-fluid w-100"></div>
+                                    <div><img src="../assets/images/product-sidebar/001.jpg" alt=""
+                                          class="img-fluid  image_zoom_cls-0">
+                                    </div>
+                                    <div><img src="../assets/images/product-sidebar/002.jpg" alt=""
+                                          class="img-fluid  image_zoom_cls-1">
+                                    </div>
+                                    <div><img src="../assets/images/product-sidebar/003.jpg" alt=""
+                                          class="img-fluid  image_zoom_cls-2">
+                                    </div>
+                                    <div><img src="../assets/images/product-sidebar/004.jpg" alt=""
+                                          class="img-fluid  image_zoom_cls-3">
+                                    </div>
                                  </div>
                               </div>
                            </div>
                         </div>
-                        <div class="col-lg-6 rtl-text">
+                        <div class="col-lg-8 rtl-text px-5 d-flex align-items-center">
                            <div class="product-right">
                               <div class="pro-group">
                                  <h2>Ladies Stylish Long Stitched kameez By Guljee</h2>
-                                 <ul class="pro-price">
-                                    <li>&#2547;70</li>
 
-                                    <li>50% off</li>
-                                 </ul>
-                                 <div class="revieu-box">
+                                 <h6 class="fw-bold text-dark my-2">&#2547;3170 <span class="primary-text">50%
+                                       off</span></h6>
+                                 <div class="rating-box mb-3">
                                     <ul>
                                        <li><i class="fa fa-star"></i></li>
                                        <li><i class="fa fa-star"></i></li>
                                        <li><i class="fa fa-star"></i></li>
                                        <li><i class="fa fa-star"></i></li>
-                                       <li><i class="fa fa-star-o"></i></li>
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li>(10 reviews)</li>
                                     </ul>
-                                    <a href="review.html"><span>(10 reviews)</span></a>
                                  </div>
                                  <ul class="best-seller">
                                     <li>
@@ -449,8 +436,7 @@
                                              d="M0.943898 2.25564L1.31868 3.85194L0.943898 5.4413L2.33892 6.30191L3.1926 7.69693L4.7889 7.32215L6.38519 7.69693L7.23887 6.30191L8.63389 5.4413L8.25911 3.85194L8.63389 2.25564L7.24581 1.39503L6.38519 0L4.7889 0.381724L3.19954 0.00694042L2.33198 1.39503L0.943898 2.25564ZM4.79584 6.65587C4.05955 6.65587 3.35342 6.36338 2.83279 5.84275C2.31215 5.32212 2.01966 4.61599 2.01966 3.8797C2.01966 3.14341 2.31215 2.43728 2.83279 1.91665C3.35342 1.39602 4.05955 1.10353 4.79584 1.10353C6.32273 1.10353 7.56507 2.34586 7.56507 3.87276C7.56507 5.41353 6.32273 6.65587 4.79584 6.65587ZM4.78195 5.96183C3.62984 5.96183 2.70677 5.03181 2.70677 3.8797C2.70677 2.73453 3.62984 1.79757 4.78195 1.79757C5.93407 1.79757 6.87102 2.73453 6.87102 3.8797C6.87102 5.03181 5.93407 5.96183 4.78195 5.96183ZM7.44708 6.72527L6.5587 8.27993L5.1151 7.95373L6.87102 12L7.84268 10.4731H9.57779L7.44708 6.72527ZM2.10295 6.77386L2.9705 8.33545L4.44881 7.98149L2.70677 12L1.73511 10.4731H0L2.10295 6.77386Z"
                                              fill="#FF6000" />
                                        </svg>
-
-                                       5 best seller
+                                       5 Best Seller
                                     </li>
                                     <li>
                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
@@ -459,8 +445,7 @@
                                              d="M2.84211 2.84211C2.84211 4.40905 4.11726 5.68421 5.68421 5.68421C7.25116 5.68421 8.52632 4.40905 8.52632 2.84211C8.52632 1.27516 7.25116 0 5.68421 0C4.11726 0 2.84211 1.27516 2.84211 2.84211ZM10.7368 12H11.3684V11.3684C11.3684 8.93116 9.38463 6.94737 6.94737 6.94737H4.42105C1.98316 6.94737 0 8.93116 0 11.3684V12H10.7368Z"
                                              fill="#FF6000" />
                                        </svg>
-
-                                       50 active view this
+                                       50 Active View This
                                     </li>
                                  </ul>
                               </div>
@@ -470,12 +455,7 @@
                                     <li>Material: COTTON</li>
                                     <li>Stock: READY STOCK</li>
                                  </ul>
-                                 <!-- <ul class="image-swatch">
-                              <li class="active"><a href="javascript:void(0)"><img src="../assets/images/product-sidebar/001.jpg" alt="" class="img-fluid"></a></li>
-                              <li><a href="javascript:void(0)"><img src="../assets/images/product-sidebar/002.jpg" alt="" class="img-fluid"></a></li>
-                              <li><a href="javascript:void(0)"><img src="../assets/images/product-sidebar/003.jpg" alt="" class="img-fluid"></a></li>
-                          </ul> -->
-                                 <h6 class="product-title size-text">SIZE</h6>
+                                 <h6 class="product-title size-text mt-3">SIZE</h6>
                                  <div class="modal fade" id="sizemodal" tabindex="-1" role="dialog"
                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -526,45 +506,57 @@
                                        </li>
                                     </ul>
                                  </div>
-                                 <h6 class="product-title">quantity</h6>
-                                 <div class="qty-box">
-                                    <div class="input-group">
-                                       <button class="qty-minus"></button>
-                                       <input class="qty-adj form-control" type="number" value="1" />
-                                       <button class="qty-plus"></button>
+
+
+                                 <div class="product-details-quantity mb-3">
+                                    <h6 class="product-title">Quantity</h6>
+                                    <div class="product-quantity-inner">
+                                       <button onclick="quickViewQunatityIncr(event)"><i
+                                             class="fas fa-plus"></i></button>
+                                       <input type="text" value="1">
+                                       <button onclick="quickViewQunatityDec(event)"><i
+                                             class="fas fa-minus"></i></button>
                                     </div>
+
                                  </div>
+
                                  <div class="product-buttons">
-                                    <a href="javascript:void(0)" id="cartEffect"
-                                       class="btn cart-btn btn-normal tooltip-top" data-tippy-content="Add to cart">
+                                    <a href="javascript:void(0)" id="cartEffect" onclick="addItemToCart()"
+                                       class="btn btn-primary-filled tooltip-top py-1" data-tippy-content="Add to cart">
                                        <i class="fa fa-shopping-cart"></i>
-                                       add to cart
+                                       Add to Cart
                                     </a>
-                                    <a href="javascript:void(0)" class="btn btn-normal add-to-wish tooltip-top"
+                                    <a href="javascript:void(0)" class="btn btn-bg-text-primary tooltip-top py-1"
                                        data-tippy-content="Add to wishlist">
                                        <i class="fa fa-heart" aria-hidden="true"></i>
+                                       Add to Wishlist
                                     </a>
                                  </div>
                               </div>
 
 
 
-                              <div class="pro-group product-tag pb-0">
-                                 <div>
+                              <div class="pro-group product-tag pb-0 row">
+                                 <div class="col-md-6 my-2">
                                     <h6 class="product-title">Tags</h6>
                                     <ul class="product-tags">
                                        <li><a href="#">Kameej</a></li>
                                        <li><a href="#">Long Kameej</a></li>
                                     </ul>
                                  </div>
-                                 <div>
+                                 <div class="col-md-6 my-2">
                                     <h6 class="product-title">share</h6>
                                     <ul class="product-social">
-                                       <li><a href="javascript:void(0)"><i class="fa fa-facebook"></i></a></li>
-                                       <li><a href="javascript:void(0)"><i class="fa fa-google-plus"></i></a></li>
-                                       <li><a href="javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
-                                       <li><a href="javascript:void(0)"><i class="fa fa-instagram"></i></a></li>
-                                       <li><a href="javascript:void(0)"><i class="fa fa-rss"></i></a></li>
+                                       <li><a href="javascript:void(0)"><img class="img-fluid"
+                                                src="../assets/images/socials/facebook.png" alt="" srcset=""></a></li>
+                                       <li><a href="javascript:void(0)"><img class="img-fluid"
+                                                src="../assets/images/socials/messenger.png" alt="" srcset=""></a></li>
+                                       <li><a href="javascript:void(0)"><img class="img-fluid"
+                                                src="../assets/images/socials/instagram.png" alt="" srcset=""></a></li>
+                                       <li><a href="javascript:void(0)"><img class="img-fluid"
+                                                src="../assets/images/socials/whatsapp.png" alt="" srcset=""></a></li>
+                                       <li><a href="javascript:void(0)"><img class="img-fluid"
+                                                src="../assets/images/socials/sharing.png" alt="" srcset=""></a></li>
                                     </ul>
                                  </div>
 
@@ -582,7 +574,7 @@
             <section id="product-details" class="container mt-5">
                <ul class="nav nav-pills product-detail-pill mb-3" id="pills-tab" role="tablist">
                   <li class="nav-item product-detail-btn" role="presentation">
-                     <button class="nav-link  product-detail-button" id="pills-home-tab" data-bs-toggle="pill"
+                     <button class="nav-link active product-detail-button" id="pills-home-tab" data-bs-toggle="pill"
                         data-bs-target="#pills-detail" type="button" role="tab" aria-controls="pills-detail"
                         aria-selected="true">Product Details</button>
                   </li>
@@ -592,14 +584,40 @@
                         aria-selected="false">Size Chart</button>
                   </li>
                   <li class="nav-item" role="presentation">
-                     <button class="nav-link active product-detail-button" id="pills-contact-tab" data-bs-toggle="pill"
+                     <button class="nav-link product-detail-button" id="pills-contact-tab" data-bs-toggle="pill"
                         data-bs-target="#pills-review" type="button" role="tab" aria-controls="pills-review"
                         aria-selected="false">Write review</button>
                   </li>
                </ul>
-               <div class="tab-content" id="pills-tabContent">
+               <div class="tab-content p-3" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="pills-detail" role="tabpanel"
+                     aria-labelledby="pills-detail-tab">
+                     <div class="product-detail-video">
+                        <div class="product-detail-title">
+                           <h3 class="pb-4">Product Long description</h3>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla pharetra nascetur eget
+                              massa.
+                              Enim a at placerat facilisis scelerisque cras. Placerat nulla porta tortor ac aliquam a
+                              nulla. Est
+                              eleifend aliquam eget sit nunc sed. Suspendisse eros purus a sed. Eget posuere consequat
+                              sit nulla
+                              pellentesque tincidunt adipiscing. Cursus pulvinar elit vitae cras eleifend erat. Erat
+                              ornare justo
+                              eu morbi. Lobortis venenatis faucibus lectus gravida tempus mollis eu lorem.</p>
+                        </div>
+                        <div class="product-detail-video-link mt-5">
+                           <img src="../assets/images/product-detail/video.png" alt="no image"
+                              class="img-fluid w-100 video-image">
+                           <div class="video-link-iocon">
+                              <a class="my-video-links" data-autoplay="true" data-vbtype="video"
+                                 href="https://youtu.be/TuarszQXGUk"> <i class="fab fa-youtube"></i></a>
+                           </div>
+
+                        </div>
+                     </div>
+                  </div>
                   <div class="tab-pane fade" id="pills-chart" role="tabpanel" aria-labelledby="pills-chart-tab">
-                     <div class="tableCart">
+                     <div class="tableCart" style="overflow-x:auto;">
                         <table>
                            <tr>
                               <td class="product-chart-first">
@@ -649,57 +667,21 @@
                         </table>
                      </div>
                   </div>
-                  <div class="tab-pane fade" id="pills-detail" role="tabpanel" aria-labelledby="pills-detail-tab">
-                     <div class="product-detail-video">
-                        <div class="product-detail-title">
-                           <h3 class="pb-4">Product Long description</h3>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla pharetra nascetur eget
-                              massa.
-                              Enim a at placerat facilisis scelerisque cras. Placerat nulla porta tortor ac aliquam a
-                              nulla. Est
-                              eleifend aliquam eget sit nunc sed. Suspendisse eros purus a sed. Eget posuere consequat
-                              sit nulla
-                              pellentesque tincidunt adipiscing. Cursus pulvinar elit vitae cras eleifend erat. Erat
-                              ornare justo
-                              eu morbi. Lobortis venenatis faucibus lectus gravida tempus mollis eu lorem.</p>
-                        </div>
-                        <div class="product-detail-video-link mt-5">
-                           <img src="../assets/images/product-detail/video.png" alt="no image"
-                              class="img-fluid w-100 video-image">
-                           <div class="video-link-iocon">
-                              <a class="my-video-links" data-autoplay="true" data-vbtype="video"
-                                 href="https://youtu.be/TuarszQXGUk"> <i class="fab fa-youtube"></i></a>
-                           </div>
 
-                        </div>
-                     </div>
-                  </div>
-                  <div class="tab-pane fade show active" id="pills-review" role="tabpanel"
-                     aria-labelledby="pills-review">
+                  <div class="tab-pane fade" id="pills-review" role="tabpanel" aria-labelledby="pills-review">
                      <div class="product-detail-review">
-                        <div class="product-detail-rating-icon mt-5">
+                        <div class="product-detail-rating-icon mt-3">
                            <h6>Rating </h6>
                            <ul>
-                              <li>
-                                 <i class="fas fa-star"></i>
-                              </li>
-                              <li>
-                                 <i class="fas fa-star"></i>
-                              </li>
-                              <li>
-                                 <i class="fas fa-star"></i>
-                              </li>
-                              <li>
-                                 <i class="fas fa-star"></i>
-                              </li>
-                              <li>
-                                 <i class="fas fa-star"></i>
-                              </li>
-
+                              <li><i class="fas fa-star"></i></li>
+                              <li><i class="fas fa-star"></i></li>
+                              <li><i class="fas fa-star"></i></li>
+                              <li><i class="fas fa-star"></i></li>
+                              <li><i class="fas fa-star"></i></li>
                            </ul>
                         </div>
                         <!-- review form -->
-                        <div class="revew-form my-5">
+                        <div class="revew-form mt-3 mb-4">
                            <form action="">
                               <div class="row">
                                  <div class="col-lg-6">
@@ -707,7 +689,7 @@
                                        <label for="name">Name</label>
                                     </div>
 
-                                    <input type="text" class="form-control" placeholder="Name">
+                                    <input type="text" class="form-control" placeholder="Enter your name">
 
 
                                  </div>
@@ -716,22 +698,24 @@
                                        <label for="name">Email</label>
                                     </div>
 
-                                    <input type="Email" class="form-control" placeholder="Email">
+                                    <input type="Email" class="form-control" placeholder="Enter your email">
 
 
                                  </div>
                               </div>
                               <div class="row">
                                  <div class="col-lg-12">
-                                    <div class="pro-form-tag mt-5">
+                                    <div class="pro-form-tag mt-4">
                                        <label for="name">Your review</label>
                                     </div>
-                                    <textarea class="form-control product-detail-review"></textarea>
+                                    <textarea class="form-control product-detail-review" rows="6"
+                                       placeholder="Write your testimonial here..."></textarea>
 
                                  </div>
                               </div>
-                              <div class="product-detail-submit">
-                                 <button type="submit">Submit your review</button>
+                              <div class="product-detail-submit mt-3">
+                                 <input type="submit" value="Submit Your Review"
+                                    class="btn btn-primary-filled px-4"></input>
                               </div>
                            </form>
 
@@ -742,259 +726,276 @@
                </div>
             </section>
             <!-- content part ends -->
+
+
+
+
             <!-- recommended part starts -->
-            <div class="recommende-text py-5 text-center container">
+            <div class="recommende-text pt-5 pb-2 text-center container">
                <h3>Recommended for you</h3>
             </div>
             <div class="recommended-For-you p-5 container">
                <div class="row">
-                  <div class="col-lg-4 ">
-                     <div class="recommended-item p-4">
-                        <div class="row">
-                           <div class="col-lg-6">
-                              <div class="recommende-image">
-                                 <img src="../assets/images/product-detail/Rectangle 160.png" alt="no-image"
-                                    class="img-fluid w-100">
+                  <div class="col-lg-4 p-2">
+                     <a href="./productDetails.html">
+                        <div class="recommended-item p-4">
+                           <div class="row">
+                              <div class="col-lg-6">
+                                 <div class="recommende-image">
+                                    <img src="../assets/images/product-detail/Rectangle 160.png" alt="no-image"
+                                       class="img-fluid w-100">
+                                 </div>
                               </div>
-                           </div>
-                           <div class="col-lg-6">
-                              <div class="recommended-text">
+                              <div class="col-lg-6">
+                                 <div class="recommended-text p-2">
+                                    <h3>Red Shopping Bag</h3>
+                                    <p class="text-muted mt-2">&#2547; <s>2,5000.0</s> </p>
+                                    <p><span class="recommende-orange">&#2547; 2,0000.0</span></p>
+                                 </div>
+                                 <div class="recommended-rating">
+                                    <ul>
+                                       <li>
+                                          <i class="fas fa-star"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fas fa-star"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fas fa-star"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fas fa-star"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fas fa-star"></i>
+                                       </li>
 
-                                 <h3>Red Shopping Bag</h3>
-                                 <p>&#2547; <s>2,5000.0</s> </p>
-                                 <p><span class="recommende-orange">&#2547;2,0000.0</span></p>
-                              </div>
-                              <div class="recommended-rating">
-                                 <ul>
-                                    <li>
-                                       <i class="fas fa-star"></i>
-                                    </li>
-                                    <li>
-                                       <i class="fas fa-star"></i>
-                                    </li>
-                                    <li>
-                                       <i class="fas fa-star"></i>
-                                    </li>
-                                    <li>
-                                       <i class="fas fa-star"></i>
-                                    </li>
-                                    <li>
-                                       <i class="fas fa-star"></i>
-                                    </li>
-
-                                 </ul>
+                                    </ul>
+                                 </div>
                               </div>
                            </div>
                         </div>
-                     </div>
+                     </a>
+                  </div>
+
+
+                  <div class="col-lg-4 p-2">
+                     <a href="./productDetails.html">
+
+                        <div class="recommended-item p-4">
+                           <div class="row">
+                              <div class="col-lg-6">
+                                 <div class="recommende-image">
+                                    <img src="../assets/images/product-detail/Rectangle 160 (3).png" alt="no-image"
+                                       class="img-fluid w-100">
+                                 </div>
+                              </div>
+                              <div class="col-lg-6">
+                                 <div class="recommended-text p-2">
+
+                                    <h3>Red Shopping Bag</h3>
+                                    <p class="text-muted mt-2">&#2547; <s>2,5000.0</s> </p>
+                                    <p><span class="recommende-orange">&#2547; 2,0000.0</span></p>
+                                 </div>
+                                 <div class="recommended-rating">
+                                    <ul>
+                                       <li>
+                                          <i class="fas fa-star"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fas fa-star"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fas fa-star"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fas fa-star"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fas fa-star"></i>
+                                       </li>
+
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </a>
+
 
                   </div>
-                  <div class="col-lg-4 ">
-                     <div class="recommended-item p-4">
-                        <div class="row">
-                           <div class="col-lg-6">
-                              <div class="recommende-image">
-                                 <img src="../assets/images/product-detail/Rectangle 160 (3).png" alt="no-image"
-                                    class="img-fluid w-100">
+                  <div class="col-lg-4 p-2">
+                     <a href="./productDetails.html">
+                        <div class="recommended-item p-4">
+                           <div class="row">
+                              <div class="col-lg-6">
+                                 <div class="recommende-image">
+                                    <img src="../assets/images/product-detail/Rectangle 160 (4).png" alt="no-image"
+                                       class="img-fluid w-100">
+                                 </div>
                               </div>
-                           </div>
-                           <div class="col-lg-6">
-                              <div class="recommended-text">
+                              <div class="col-lg-6">
+                                 <div class="recommended-text p-2">
 
-                                 <h3>Red Shopping Bag</h3>
-                                 <p>&#2547; <s>2,5000.0</s> </p>
-                                 <p><span class="recommende-orange">&#2547;2,0000.0</span></p>
-                              </div>
-                              <div class="recommended-rating">
-                                 <ul>
-                                    <li>
-                                       <i class="fas fa-star"></i>
-                                    </li>
-                                    <li>
-                                       <i class="fas fa-star"></i>
-                                    </li>
-                                    <li>
-                                       <i class="fas fa-star"></i>
-                                    </li>
-                                    <li>
-                                       <i class="fas fa-star"></i>
-                                    </li>
-                                    <li>
-                                       <i class="fas fa-star"></i>
-                                    </li>
+                                    <h3>Red Shopping Bag</h3>
+                                    <p class="text-muted mt-2">&#2547; <s>2,5000.0</s> </p>
+                                    <p><span class="recommende-orange">&#2547; 2,0000.0</span></p>
+                                 </div>
+                                 <div class="recommended-rating">
+                                    <ul>
+                                       <li>
+                                          <i class="fas fa-star"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fas fa-star"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fas fa-star"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fas fa-star"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fas fa-star"></i>
+                                       </li>
 
-                                 </ul>
+                                    </ul>
+                                 </div>
                               </div>
                            </div>
                         </div>
-                     </div>
+                     </a>
+                  </div>
+
+                  <div class="col-lg-4 p-2">
+                     <a href="productDetails.html">
+                        <div class="recommended-item p-4">
+                           <div class="row">
+                              <div class="col-lg-6">
+                                 <div class="recommende-image">
+                                    <img src="../assets/images/product-detail/Rectangle 160 (2).png" alt="no-image"
+                                       class="img-fluid w-100">
+                                 </div>
+                              </div>
+                              <div class="col-lg-6">
+                                 <div class="recommended-text p-2">
+
+                                    <h3>Red Shopping Bag</h3>
+                                    <p class="text-muted mt-2">&#2547; <s>2,5000.0</s> </p>
+                                    <p><span class="recommende-orange">&#2547; 2,0000.0</span></p>
+                                 </div>
+                                 <div class="recommended-rating">
+                                    <ul>
+                                       <li>
+                                          <i class="fas fa-star"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fas fa-star"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fas fa-star"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fas fa-star"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fas fa-star"></i>
+                                       </li>
+
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </a>
+
 
                   </div>
-                  <div class="col-lg-4 ">
-                     <div class="recommended-item p-4">
-                        <div class="row">
-                           <div class="col-lg-6">
-                              <div class="recommende-image">
-                                 <img src="../assets/images/product-detail/Rectangle 160 (4).png" alt="no-image"
-                                    class="img-fluid w-100">
+                  <div class="col-lg-4 p-2">
+                     <a href="./productDetails.html">
+                        <div class="recommended-item p-4">
+                           <div class="row">
+                              <div class="col-lg-6">
+                                 <div class="recommende-image">
+                                    <img src="../assets/images/product-detail/Rectangle 160.png" alt="no-image"
+                                       class="img-fluid w-100">
+                                 </div>
                               </div>
-                           </div>
-                           <div class="col-lg-6">
-                              <div class="recommended-text">
+                              <div class="col-lg-6">
+                                 <div class="recommended-text p-2">
 
-                                 <h3>Red Shopping Bag</h3>
-                                 <p>&#2547; <s>2,5000.0</s> </p>
-                                 <p><span class="recommende-orange">&#2547;2,0000.0</span></p>
-                              </div>
-                              <div class="recommended-rating">
-                                 <ul>
-                                    <li>
-                                       <i class="fas fa-star"></i>
-                                    </li>
-                                    <li>
-                                       <i class="fas fa-star"></i>
-                                    </li>
-                                    <li>
-                                       <i class="fas fa-star"></i>
-                                    </li>
-                                    <li>
-                                       <i class="fas fa-star"></i>
-                                    </li>
-                                    <li>
-                                       <i class="fas fa-star"></i>
-                                    </li>
+                                    <h3>Red Shopping Bag</h3>
+                                    <p class="text-muted mt-2">&#2547; <s>2,5000.0</s> </p>
+                                    <p><span class="recommende-orange">&#2547; 2,0000.0</span></p>
+                                 </div>
+                                 <div class="recommended-rating">
+                                    <ul>
+                                       <li>
+                                          <i class="fas fa-star"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fas fa-star"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fas fa-star"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fas fa-star"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fas fa-star"></i>
+                                       </li>
 
-                                 </ul>
+                                    </ul>
+                                 </div>
                               </div>
                            </div>
                         </div>
-                     </div>
+
+                     </a>
 
                   </div>
-               </div>
-               <div class="row mt-5">
-                  <div class="col-lg-4 ">
-                     <div class="recommended-item p-4">
-                        <div class="row">
-                           <div class="col-lg-6">
-                              <div class="recommende-image">
-                                 <img src="../assets/images/product-detail/Rectangle 160 (2).png" alt="no-image"
-                                    class="img-fluid w-100">
+                  <div class="col-lg-4 p-2">
+                     <a href="./productDetails.html">
+                        <div class="recommended-item p-4">
+                           <div class="row">
+                              <div class="col-lg-6">
+                                 <div class="recommende-image">
+                                    <img src="../assets/images/product-detail/Rectangle 160 (1).png" alt="no-image"
+                                       class="img-fluid w-100">
+                                 </div>
                               </div>
-                           </div>
-                           <div class="col-lg-6">
-                              <div class="recommended-text">
+                              <div class="col-lg-6">
+                                 <div class="recommended-text p-2">
 
-                                 <h3>Red Shopping Bag</h3>
-                                 <p>&#2547; <s>2,5000.0</s> </p>
-                                 <p><span class="recommende-orange">&#2547;2,0000.0</span></p>
-                              </div>
-                              <div class="recommended-rating">
-                                 <ul>
-                                    <li>
-                                       <i class="fas fa-star"></i>
-                                    </li>
-                                    <li>
-                                       <i class="fas fa-star"></i>
-                                    </li>
-                                    <li>
-                                       <i class="fas fa-star"></i>
-                                    </li>
-                                    <li>
-                                       <i class="fas fa-star"></i>
-                                    </li>
-                                    <li>
-                                       <i class="fas fa-star"></i>
-                                    </li>
+                                    <h3>Red Shopping Bag</h3>
+                                    <p class="text-muted mt-2">&#2547; <s>2,5000.0</s> </p>
+                                    <p><span class="recommende-orange">&#2547; 2,0000.0</span></p>
+                                 </div>
+                                 <div class="recommended-rating">
+                                    <ul>
+                                       <li>
+                                          <i class="fas fa-star"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fas fa-star"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fas fa-star"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fas fa-star"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fas fa-star"></i>
+                                       </li>
 
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-
-                  </div>
-                  <div class="col-lg-4 ">
-                     <div class="recommended-item p-4">
-                        <div class="row">
-                           <div class="col-lg-6">
-                              <div class="recommende-image">
-                                 <img src="../assets/images/product-detail/Rectangle 160.png" alt="no-image"
-                                    class="img-fluid w-100">
-                              </div>
-                           </div>
-                           <div class="col-lg-6">
-                              <div class="recommended-text">
-
-                                 <h3>Red Shopping Bag</h3>
-                                 <p>&#2547; <s>2,5000.0</s> </p>
-                                 <p><span class="recommende-orange">&#2547;2,0000.0</span></p>
-                              </div>
-                              <div class="recommended-rating">
-                                 <ul>
-                                    <li>
-                                       <i class="fas fa-star"></i>
-                                    </li>
-                                    <li>
-                                       <i class="fas fa-star"></i>
-                                    </li>
-                                    <li>
-                                       <i class="fas fa-star"></i>
-                                    </li>
-                                    <li>
-                                       <i class="fas fa-star"></i>
-                                    </li>
-                                    <li>
-                                       <i class="fas fa-star"></i>
-                                    </li>
-
-                                 </ul>
+                                    </ul>
+                                 </div>
                               </div>
                            </div>
                         </div>
-                     </div>
-
-                  </div>
-                  <div class="col-lg-4 ">
-                     <div class="recommended-item p-4">
-                        <div class="row">
-                           <div class="col-lg-6">
-                              <div class="recommende-image">
-                                 <img src="../assets/images/product-detail/Rectangle 160 (1).png" alt="no-image"
-                                    class="img-fluid w-100">
-                              </div>
-                           </div>
-                           <div class="col-lg-6">
-                              <div class="recommended-text">
-
-                                 <h3>Red Shopping Bag</h3>
-                                 <p>&#2547; <s>2,5000.0</s> </p>
-                                 <p><span class="recommende-orange">&#2547;2,0000.0</span></p>
-                              </div>
-                              <div class="recommended-rating">
-                                 <ul>
-                                    <li>
-                                       <i class="fas fa-star"></i>
-                                    </li>
-                                    <li>
-                                       <i class="fas fa-star"></i>
-                                    </li>
-                                    <li>
-                                       <i class="fas fa-star"></i>
-                                    </li>
-                                    <li>
-                                       <i class="fas fa-star"></i>
-                                    </li>
-                                    <li>
-                                       <i class="fas fa-star"></i>
-                                    </li>
-
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-
+                     </a>
                   </div>
                </div>
             </div>
@@ -1216,7 +1217,8 @@
                   </li>
                   <li>
                      <div class="buttons d-flex justify-content-center">
-                        <a href="checkout.html" class="btn"><span class="btn-primary-filled px-4 py-2">PLACE ORDER</span>
+                        <a href="checkout.html" class="btn"><span class="btn-primary-filled px-4 py-2">PLACE
+                              ORDER</span>
                            <span class="btn-secondary-filled px-2 py-2">$1050.00</span></a>
                      </div>
                   </li>
@@ -1533,7 +1535,7 @@
                               laudantium</p>
                         </div>
                         <div class="pro-group pb-0">
-                           <h6 class="product-title size-text">select size<span>
+                           <h6 class="product-title size-text mt-3">select size<span>
                                  <a href="#" data-bs-toggle="modal" data-bs-target="#sizemodal">size chart</a></span>
                            </h6>
                            <div class="modal fade" id="sizemodal" tabindex="-1" role="dialog"
@@ -1918,7 +1920,7 @@
    <!-- add to  setting bar  end-->
 
    <!-- notification product -->
-   <div class="product-notification" id="dismiss">
+   <!-- <div class="product-notification" id="dismiss">
       <span onclick="dismiss();" class="btn-close" aria-hidden="true"></span>
       <div class="media">
          <img class="me-2" src="../assets/images/mega-store/hot-deal/3.jpg" alt="Generic placeholder image">
@@ -1927,7 +1929,7 @@
             Cras sit amet nibh libero, in gravida nulla.
          </div>
       </div>
-   </div>
+   </div> -->
    <!-- notification product -->
 
 
@@ -2061,7 +2063,7 @@
                            <div class="cart-details-btn py-3">
                               <button onclick="addItemToCart()" class="btn btn-primary-filled me-3"><i
                                     class="fas fa-cart-plus me-2"></i>Add To Cart</button>
-                              <button class="btn btn-primary-filled">Details</button>
+                              <a href="./productDetails.html" class="btn btn-primary-filled">Details</a>
                            </div>
                         </div>
                      </div>
