@@ -26,6 +26,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
       rel="stylesheet">
 
+   <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+
    <!-- Font awesome  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
@@ -136,7 +140,7 @@
                            <div class="search-input">
                               <input type="text" placeholder="Search Here.....">
                            </div>
-                           <div class="search-btn">
+                           <div class="search-btn d-flex align-items-center">
                               <button class="btn w-100"><i class="fas fa-search"></i></button>
                            </div>
                         </div>
@@ -147,7 +151,7 @@
                      <!-- ---------- Category Right Buttons ------------- -->
                      <div id="icon-block" class="icon-block">
                         <ul class="theme-color fs-5 text-white">
-                            
+
                            <li class="mobile-wishlist item-count icon-desk-none" onclick="openWishlist()">
                               <i class="far fa-heart"></i>
                               <div class="item-count-contain inverce"> 1 </div>
@@ -175,11 +179,11 @@
    <main class="main-body">
       <div id="sidemenu-container" class="sidemenu-container hide-menu">
          <ul id="category-toggle-custom-sidemenu" class="category-sidemenu">
-              <div class="category-sidemenu-back-container">
+            <div class="category-sidemenu-back-container">
                <a href="index.html">
                   <h3 class="mb-2">Fashion</h3>
-               </a>               
-            </div>         
+               </a>
+            </div>
 
             <li class="menu-heading">
                <a href="#"><span class="text">Coupons</span> <span class="number">1</span></a>
@@ -339,26 +343,17 @@
                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
                   data-bs-target="#brand-collapse" aria-expanded="false">
                   <img src="../assets/images/sidemenu/accessories.png" class="sidemenu-icon" alt="" srcset="">
-                  Brand
+                  User Profile
                </button>
                <div class="collapse" id="brand-collapse">
                   <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small sub-category">
-                     <li><a href="#">Item 1</a></li>
-                     <li><a href="#">Item 2</a></li>
-                     <li><a href="#">Item 3</a></li>
+                     <li><a href="profile.html">Profile - TEST</a></li>
+                     <li><a href="checkout.html">Checkout - TEST</a></li>
+                     <li><a href="order-tracking.html">Order Tracking - TEST</a></li>
+                     <li><a href="contact.html">Contact - TEST</a></li>
                   </ul>
                </div>
             </li>
-
-            <!-- ------- For Testing Purpose -------- -->
-            <li class="text-danger mt-5">
-               <h6>For Testing Purpose Only!!!</h6>
-            </li>
-            <li><a href="profile.html">Profile - TEST</a></li>
-            <li><a href="checkout.html">Checkout - TEST</a></li>
-            <li><a href="order-tracking.html">Order Tracking - TEST</a></li>
-            <li><a href="contact.html">Contact - TEST</a></li>
-            <!-- ------- For Testing Purpose -------- -->
          </ul>
       </div>
 
@@ -698,8 +693,8 @@
             </div>
          </section>
          <div class="text-center mt-md-4 mt-2 pb-5">
-            <button class="btn btn-primary-transparent px-4">All Brands <i
-                  class="ms-1 fas fa-long-arrow-alt-right"></i></button>
+            <a href="./all-brands.html" class="btn btn-primary-transparent px-4">All Brands <i
+                  class="ms-1 fas fa-long-arrow-alt-right"></i></a>
          </div>
          <!-- brand start -->
 
@@ -708,147 +703,7 @@
          <section class="hot-deals-section mt-5 mx-md-5 mx-3">
             <div class="container-fluid">
                <div class="row">
-                  <div class="col-xl-4 col-12">
-                     <div class="card hot-deals-wrapper">
-                        <div class="hot-deal-header">
-                           <h4>Hot Deals</h4>
-                        </div>
-                        <div class="hot-deal">
-                           <div class="hot-deals-inner">
-                              <div class="hot-deals-image">
-                                 <img src="../assets/images/mpp_product/product1.jpg" alt="">
-                                 <img src="../assets/images/mpp_product/product1.jpg" alt="">
-                                 <img src="../assets/images/mpp_product/product1.jpg" alt="">
-                                 <img src="../assets/images/mpp_product/product1.jpg" alt="">
-                              </div>
-                              <!-- end hot-deals-image  -->
-                              <div class="hot-deals-price mt-3">
-                                 <span class="secondary-text">&#2547; 2,000.0
-                                 </span>
-                                 <span>&#2547; <del>2,000.0</del></span>
-                              </div>
-                              <!-- end hot-deals-price  -->
-                              <div class="hot-product-deals">
-                                 <h5>Winter Fashion</h5>
-                                 <div class="hot-product-deals-img">
-                                    <img src="../assets/images/mpp_product/product1.jpg" alt="">
-                                 </div>
-                                 <!-- end hot-product-deals-img  -->
-                              </div>
-                              <!-- end hot-product-deals  -->
-                              <div class="hot-product-date-inner">
-                                 <div class="row">
-                                    <div class="hot-product-cont">
-                                       <h6>Hurry Up!</h6>
-                                       <p>offer ends in:</p>
-                                    </div>
-                                    <!-- end hot-product-cont  -->
-
-                                    <!-- end col  -->
-                                    <div class="hot-date-inner">
-                                       <div class="hot-date">
-                                          <span id="days" class="count-number">0</span>
-                                          <span class="count-text">Days</span>
-                                       </div>
-                                       <!-- end hot-date  -->
-                                       <div class="hot-date">
-                                          <span id="days" class="count-number">00</span>
-                                          <span class="count-text">Hours</span>
-                                       </div>
-                                       <!-- end hot-date  -->
-                                       <div class="hot-date">
-                                          <span id="days" class="count-number">00</span>
-                                          <span class="count-text">Minutes</span>
-                                       </div>
-                                       <!-- end hot-date  -->
-                                       <div class="hot-date">
-                                          <span id="days" class="count-number">00</span>
-                                          <span class="count-text">Seconds</span>
-                                       </div>
-                                       <!-- end hot-date  -->
-                                    </div>
-                                    <!-- end hot-date-inner  -->
-                                 </div>
-                                 <!-- end row  -->
-                              </div>
-                              <!-- end hot-product-date-inner  -->
-                           </div>
-                           <!-- end hot-deals-inner  -->
-                           <div class="hot-deals-inner">
-                              <div class="hot-deals-image">
-                                 <img src="../assets/images/mpp_product/product1.jpg" alt="">
-                                 <img src="../assets/images/mpp_product/product1.jpg" alt="">
-                                 <img src="../assets/images/mpp_product/product1.jpg" alt="">
-                                 <img src="../assets/images/mpp_product/product1.jpg" alt="">
-                              </div>
-                              <!-- end hot-deals-image  -->
-                              <div class="hot-deals-price mt-3">
-                                 <span class="secondary-text">&#2547; 2,000.0
-                                 </span>
-                                 <span>&#2547; <del>2,000.0</del></span>
-                              </div>
-                              <!-- end hot-deals-price  -->
-                              <div class="hot-product-deals">
-                                 <h5>Winter Fashion</h5>
-                                 <div class="hot-product-deals-img">
-                                    <img src="../assets/images/mpp_product/product1.jpg" alt="">
-                                 </div>
-                                 <!-- end hot-product-deals-img  -->
-                              </div>
-                              <!-- end hot-product-deals  -->
-                              <div class="hot-product-date-inner">
-                                 <div class="row">
-                                    <div class="hot-product-cont">
-                                       <h6>Hurry Up!</h6>
-                                       <p>offer ends in:</p>
-                                    </div>
-                                    <!-- end hot-product-cont  -->
-
-                                    <!-- end col  -->
-                                    <div class="hot-date-inner">
-                                       <div class="hot-date">
-                                          <span id="days" class="count-number">0</span>
-                                          <span class="count-text">Days</span>
-                                       </div>
-                                       <!-- end hot-date  -->
-                                       <div class="hot-date">
-                                          <span id="days" class="count-number">00</span>
-                                          <span class="count-text">Hours</span>
-                                       </div>
-                                       <!-- end hot-date  -->
-                                       <div class="hot-date">
-                                          <span id="days" class="count-number">00</span>
-                                          <span class="count-text">Minutes</span>
-                                       </div>
-                                       <!-- end hot-date  -->
-                                       <div class="hot-date">
-                                          <span id="days" class="count-number">00</span>
-                                          <span class="count-text">Seconds</span>
-                                       </div>
-                                       <!-- end hot-date  -->
-                                    </div>
-                                    <!-- end hot-date-inner  -->
-
-                                 </div>
-                                 <!-- end row  -->
-                              </div>
-                              <!-- end hot-product-date-inner  -->
-                           </div>
-                           <!-- end hot-deals-inner  -->
-                        </div>
-                        <!-- end hot-deal -->
-
-                        <div class="hot-deal-btn">
-                           <button class="left btn text-muted"><i class="fas fa-chevron-left"></i> Previous Deal
-                           </button>
-                           <button class="right btn text-muted">Next Deal <i class="fas fa-chevron-right"></i> </button>
-                        </div>
-                     </div>
-                     <!-- end hot-deals-wrapper  -->
-                  </div>
-                  <!-- end col  -->
-
-                  <div class="col-xl-8 col-12">
+                  <div class="col-12">
                      <div class="product-gallery-wrapper portfolio-section grid-portfolio ratio2_3 portfolio-padding ">
                         <div id="form1" class="gallery-filters mt-4">
                            <button class="filter-button project_button active" data-filter="latest">Latest
@@ -1153,10 +1008,341 @@
          </section>
          <!-- end hot-deals-section  -->
 
+         <!-- hot deal start -->
+         <section class="hotdeal-second section-big-mb-space mt-5 px-md-5 px-3">
+            <div class="container-fluid">
+               <div class="row hotdeal-block2">
+                  <div class="col-12">
+                     <div class="hotdeal-slide3">
+                        <div>
+                           <div class="hotdeal-box">
+                              <div class="img-wrapper">
+                                 <a href="product-page(left-sidebar).html">
+                                    <img src="../assets/images/mega-store/hot-deal/1.jpg" alt="hot-deal"
+                                       class="img-fluid bg-img">
+                                 </a>
+                              </div>
+                              <div class="hotdeal-contain">
+                                 <div>
+                                    <a href="product-page(left-sidebar).html">
+                                       <h3>smart phone</h3>
+                                    </a>
+                                    <h5>
+                                       $60
+                                       <span class="price">$80</span>
+                                    </h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    <ul>
+                                       <li>
+                                          <i class="fa fa-star"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fa fa-star"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fa fa-star"></i>
+                                       </li>
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star"></i></li>                                     
+                                    </ul>
+                                    <div class="timer2">
+                                       <div class="hot-date-inner">
+                                          <div class="hot-date">
+                                             <span id="days" class="count-number">0</span>
+                                             <span class="count-text">Days</span>
+                                          </div>
+                                          <!-- end hot-date  -->
+                                          <div class="hot-date">
+                                             <span id="days" class="count-number">00</span>
+                                             <span class="count-text">Hours</span>
+                                          </div>
+                                          <!-- end hot-date  -->
+                                          <div class="hot-date">
+                                             <span id="days" class="count-number">00</span>
+                                             <span class="count-text">Minutes</span>
+                                          </div>
+                                          <!-- end hot-date  -->
+                                          <div class="hot-date">
+                                             <span id="days" class="count-number">00</span>
+                                             <span class="count-text">Seconds</span>
+                                          </div>
+                                          <!-- end hot-date  -->
+                                       </div>
+                                    </div>
+                                    <a href="javascript:void(0)" onclick="addItemToCart()" class="btn btn-primary-filled add-cartnoty px-4">add to
+                                       cart</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div>
+                           <div class="hotdeal-box">
+                              <div class="img-wrapper">
+                                 <a href="product-page(left-sidebar).html">
+                                    <img src="../assets/images/mega-store/hot-deal/2.jpg" alt="hot-deal"
+                                       class="img-fluid bg-img">
+                                 </a>
+                              </div>
+                              <div class="hotdeal-contain">
+                                 <div>
+                                    <a href="product-page(left-sidebar).html">
+                                       <h3>perfums</h3>
+                                    </a>
+                                    <h5>
+                                       $70
+                                       <span class="price">$100</span>
+                                    </h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    <ul>
+                                       <li>
+                                          <i class="fa fa-star"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fa fa-star"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fa fa-star"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fa fa-star"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fa fa-star"></i>
+                                       </li>                                       
+                                    </ul>
+                                    <div class="timer2">
+                                       <div class="hot-date-inner">
+                                          <div class="hot-date">
+                                             <span id="days" class="count-number">0</span>
+                                             <span class="count-text">Days</span>
+                                          </div>
+                                          <!-- end hot-date  -->
+                                          <div class="hot-date">
+                                             <span id="days" class="count-number">00</span>
+                                             <span class="count-text">Hours</span>
+                                          </div>
+                                          <!-- end hot-date  -->
+                                          <div class="hot-date">
+                                             <span id="days" class="count-number">00</span>
+                                             <span class="count-text">Minutes</span>
+                                          </div>
+                                          <!-- end hot-date  -->
+                                          <div class="hot-date">
+                                             <span id="days" class="count-number">00</span>
+                                             <span class="count-text">Seconds</span>
+                                          </div>
+                                          <!-- end hot-date  -->
+                                       </div>
+                                    </div>
+                                    <a href="javascript:void(0)" onclick="addItemToCart()" class="btn btn-primary-filled add-cartnoty px-4">add to
+                                       cart</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div>
+                           <div class="hotdeal-box">
+                              <div class="img-wrapper">
+                                 <a href="product-page(left-sidebar).html">
+                                    <img src="../assets/images/mega-store/hot-deal/1.jpg" alt="hot-deal"
+                                       class="img-fluid bg-img">
+                                 </a>
+                              </div>
+                              <div class="hotdeal-contain">
+                                 <div>
+                                    <a href="product-page(left-sidebar).html">
+                                       <h3>smart phone</h3>
+                                    </a>
+                                    <h5>
+                                       $60
+                                       <span class="price">$80</span>
+                                    </h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    <ul>
+                                       <li>
+                                          <i class="fa fa-star"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fa fa-star"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fa fa-star"></i>
+                                       </li>
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star"></i></li>                                     
+                                    </ul>
+                                    <div class="timer2">
+                                       <div class="hot-date-inner">
+                                          <div class="hot-date">
+                                             <span id="days" class="count-number">0</span>
+                                             <span class="count-text">Days</span>
+                                          </div>
+                                          <!-- end hot-date  -->
+                                          <div class="hot-date">
+                                             <span id="days" class="count-number">00</span>
+                                             <span class="count-text">Hours</span>
+                                          </div>
+                                          <!-- end hot-date  -->
+                                          <div class="hot-date">
+                                             <span id="days" class="count-number">00</span>
+                                             <span class="count-text">Minutes</span>
+                                          </div>
+                                          <!-- end hot-date  -->
+                                          <div class="hot-date">
+                                             <span id="days" class="count-number">00</span>
+                                             <span class="count-text">Seconds</span>
+                                          </div>
+                                          <!-- end hot-date  -->
+                                       </div>
+                                    </div>
+                                    <a href="javascript:void(0)" onclick="addItemToCart()" class="btn btn-primary-filled add-cartnoty px-4">add to
+                                       cart</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div>
+                           <div class="hotdeal-box">
+                              <div class="img-wrapper">
+                                 <a href="product-page(left-sidebar).html">
+                                    <img src="../assets/images/mega-store/hot-deal/2.jpg" alt="hot-deal"
+                                       class="img-fluid bg-img">
+                                 </a>
+                              </div>
+                              <div class="hotdeal-contain">
+                                 <div>
+                                    <a href="product-page(left-sidebar).html">
+                                       <h3>perfums</h3>
+                                    </a>
+                                    <h5>
+                                       $70
+                                       <span class="price">$100</span>
+                                    </h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    <ul>
+                                       <li>
+                                          <i class="fa fa-star"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fa fa-star"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fa fa-star"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fa fa-star"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fa fa-star"></i>
+                                       </li>                                       
+                                    </ul>
+                                    <div class="timer2">
+                                       <div class="hot-date-inner">
+                                          <div class="hot-date">
+                                             <span id="days" class="count-number">0</span>
+                                             <span class="count-text">Days</span>
+                                          </div>
+                                          <!-- end hot-date  -->
+                                          <div class="hot-date">
+                                             <span id="days" class="count-number">00</span>
+                                             <span class="count-text">Hours</span>
+                                          </div>
+                                          <!-- end hot-date  -->
+                                          <div class="hot-date">
+                                             <span id="days" class="count-number">00</span>
+                                             <span class="count-text">Minutes</span>
+                                          </div>
+                                          <!-- end hot-date  -->
+                                          <div class="hot-date">
+                                             <span id="days" class="count-number">00</span>
+                                             <span class="count-text">Seconds</span>
+                                          </div>
+                                          <!-- end hot-date  -->
+                                       </div>
+                                    </div>
+                                    <a href="javascript:void(0)" onclick="addItemToCart()" class="btn btn-primary-filled add-cartnoty px-4">add to
+                                       cart</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div>
+                           <div class="hotdeal-box">
+                              <div class="img-wrapper">
+                                 <a href="product-page(left-sidebar).html">
+                                    <img src="../assets/images/mega-store/hot-deal/2.jpg" alt="hot-deal"
+                                       class="img-fluid bg-img">
+                                 </a>
+                              </div>
+                              <div class="hotdeal-contain">
+                                 <div>
+                                    <a href="product-page(left-sidebar).html">
+                                       <h3>perfums</h3>
+                                    </a>
+                                    <h5>
+                                       $70
+                                       <span class="price">$100</span>
+                                    </h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    <ul>
+                                       <li>
+                                          <i class="fa fa-star"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fa fa-star"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fa fa-star"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fa fa-star"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fa fa-star"></i>
+                                       </li>                                       
+                                    </ul>
+                                    <div class="timer2">
+                                       <div class="hot-date-inner">
+                                          <div class="hot-date">
+                                             <span id="days" class="count-number">0</span>
+                                             <span class="count-text">Days</span>
+                                          </div>
+                                          <!-- end hot-date  -->
+                                          <div class="hot-date">
+                                             <span id="days" class="count-number">00</span>
+                                             <span class="count-text">Hours</span>
+                                          </div>
+                                          <!-- end hot-date  -->
+                                          <div class="hot-date">
+                                             <span id="days" class="count-number">00</span>
+                                             <span class="count-text">Minutes</span>
+                                          </div>
+                                          <!-- end hot-date  -->
+                                          <div class="hot-date">
+                                             <span id="days" class="count-number">00</span>
+                                             <span class="count-text">Seconds</span>
+                                          </div>
+                                          <!-- end hot-date  -->
+                                       </div>
+                                    </div>
+                                    <a href="javascript:void(0)" onclick="addItemToCart()" class="btn btn-primary-filled add-cartnoty px-4">add to
+                                       cart</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                       
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- hot deal start -->
+
 
          <!-- Start most popular product gallery  -->
          <section
-            class=" product-gallery-section portfolio-section grid-portfolio ratio2_3 portfolio-padding section-big-pt-space b-g-light mx-md-5 mx-3 my-5">
+            class="most-popular-products product-gallery-section portfolio-section grid-portfolio ratio2_3 portfolio-padding section-big-pt-space b-g-light mx-md-5 mx-3 my-5">
             <div class="container-fluid">
                <div class="row">
                   <div class="col-12">
@@ -3190,6 +3376,67 @@
                            </div>
                         </div>
                      </div>
+
+
+                     <div class="col-12 px-5 mt-5">
+                        <div class="d-flex flex-wrap bg-white justify-content-evenly align-items-center p-3 rounded-2">
+                           <div class="d-flex align-items-center">
+                              <h5 class="text-dark">Pay With</h5>
+                           </div>
+                           <div class="p-1"><img height="40" src="../assets/images/footer-brands/image 1.png" alt=""
+                                 srcset="">
+                           </div>
+                           <div class="p-1"><img height="40" src="../assets/images/footer-brands/image 2.png" alt=""
+                                 srcset="">
+                           </div>
+                           <div class="p-1"><img height="40" src="../assets/images/footer-brands/image 3.png" alt=""
+                                 srcset="">
+                           </div>
+                           <div class="p-1"><img height="40" src="../assets/images/footer-brands/image 4.png" alt=""
+                                 srcset="">
+                           </div>
+                           <div class="p-1"><img height="40" src="../assets/images/footer-brands/image 5.png" alt=""
+                                 srcset="">
+                           </div>
+                           <div class="p-1"><img height="40" src="../assets/images/footer-brands/image 6.png" alt=""
+                                 srcset="">
+                           </div>
+                           <div class="p-1"><img height="40" src="../assets/images/footer-brands/image 7.png" alt=""
+                                 srcset="">
+                           </div>
+                           <div class="p-1"><img height="40" src="../assets/images/footer-brands/image 8.png" alt=""
+                                 srcset="">
+                           </div>
+                           <div class="p-1"><img height="40" src="../assets/images/footer-brands/image 9.png" alt=""
+                                 srcset="">
+                           </div>
+                           <div class="p-1"><img height="40" src="../assets/images/footer-brands/image 10.jpg" alt=""
+                                 srcset="">
+                           </div>
+                           <div class="p-1"><img height="40" src="../assets/images/footer-brands/image 12.png" alt=""
+                                 srcset="">
+                           </div>
+                           <div class="p-1"><img height="40" src="../assets/images/footer-brands/image 13.png" alt=""
+                                 srcset="">
+                           </div>
+                           <div class="p-1"><img height="40" src="../assets/images/footer-brands/image 14.png" alt=""
+                                 srcset="">
+                           </div>
+                           <div class="p-1"><img height="40" src="../assets/images/footer-brands/image 15.png" alt=""
+                                 srcset="">
+                           </div>
+                           <div class="p-1"><img height="40" src="../assets/images/footer-brands/image 16.png" alt=""
+                                 srcset="">
+                           </div>
+                           <div class="p-1"><img height="40" src="../assets/images/footer-brands/image 17.png" alt=""
+                                 srcset="">
+                           </div>
+                           <div class="p-1"><img height="40" src="../assets/images/footer-brands/image 18.png" alt=""
+                                 srcset="">
+                           </div>
+                           <div><img height="60" src="../assets/images/footer-brands/sslcom.png" alt="" srcset=""></div>
+                        </div>
+                     </div>
                   </div>
                </div>
             </div>
@@ -4049,7 +4296,7 @@
             Cras sit amet nibh libero, in gravida nulla.
          </div>
       </div>
-   </div> --> 
+   </div> -->
    <!-- notification product -->
 
 

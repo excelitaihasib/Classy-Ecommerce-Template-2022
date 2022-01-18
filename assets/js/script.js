@@ -1146,7 +1146,9 @@
   $('.hotdeal-slide3').slick({
     dots: false,
     infinite: true,
-    speed: 300,
+    speed: 1000,
+    autoplay: true,
+    autoplaySpeed: 3000,
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
@@ -2530,6 +2532,39 @@
   });
 
   $('.sale-slider').slick({
+    infinite: true,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 6000,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3
+        }
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 680,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
+
+
+  $('.hot-deals-slider').slick({
     infinite: true,
     speed: 300,
     slidesToShow: 3,

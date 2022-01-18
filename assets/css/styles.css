@@ -9,7 +9,7 @@
 
 body {
     overflow-x: hidden !important;
-    font-family: 'Roboto', sans-serif!important;
+    font-family: 'Mukta', sans-serif!important;
 }
 
 /* --------------- Common Styles ----------------- */
@@ -219,8 +219,8 @@ body {
     border-radius: 28px 0 0 28px;
     color: var(--text-white);
     margin: 2px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    /* padding-top: 8px;
+    padding-bottom: 8px; */
 }
 
 .custom-header .search-container .search .search-input {
@@ -257,7 +257,7 @@ body {
 .custom-header .category-contain .icon-block ul li .item-count-contain {
     position: absolute;
     top: -8px;
-    right: -6px;
+    right: 5px;
 }
 
 .custom-header .category-contain .icon-block-mobile {
@@ -269,7 +269,7 @@ body {
 }
 
 .custom-header .category-contain .icon-block ul li {
-    padding-right: 2px;
+    padding-right: 18px;
 }
 
 
@@ -729,6 +729,52 @@ body {
     text-align: end;
 }
 
+.hot-deals-section .product-gallery-wrapper .image-overlay-container{
+    height: 200px;
+}
+
+
+
+.hotdeal-slide3 .hotdeal-box .hot-date-inner {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.hotdeal-slide3 .hotdeal-box .hot-date-inner .hot-date {
+    text-align: center;
+    background-color: #FF6000;
+    margin: 2px;
+}
+
+.hotdeal-slide3 .hotdeal-box .hot-date-inner .hot-date .count-number {
+    width: 50px;    
+    padding: 5px 10px 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.hotdeal-slide3 .hotdeal-box .hot-date-inner .hot-date .count-text {
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0;
+    color: #fff;
+    padding-bottom: 5px;
+}
+
+
+
+
+
+
+
+
 .product-gallery-wrapper .gallery-filter-wrap {
     border-bottom: 2px solid var(--primary);
 }
@@ -886,6 +932,10 @@ body {
     align-items: center;
 }
 
+.most-popular-products .image-overlay-container{
+    height: 250px;
+}
+
 .most-popular-product-heading {
     background: #FF6000;
     color: #fff;
@@ -898,6 +948,7 @@ body {
     font-size: 28px;
     font-weight: 500;
 }
+
 
 
 @media only screen and (max-width: 767px) {
@@ -915,6 +966,10 @@ body {
         text-align: start;
     }
 }
+
+
+
+
 
 
 
@@ -944,7 +999,7 @@ body {
 }
 
 .best-selling-product .sellingproduct-item .product-description h3 {
-    font-family: Poppins;
+    font-family: 'Mukta', sans-serif!important;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -1054,7 +1109,7 @@ body {
 
 .sale-product-section-title h3 {
     color: #FFFFFF;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Mukta', sans-serif!important;
     font-size: 22px;
 }
 
@@ -1122,7 +1177,7 @@ body {
 
 .new-products-title h3 {
     color: #FFFFFF;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Mukta', sans-serif!important;
     font-size: 22px;
 }
 
@@ -2638,7 +2693,10 @@ body {
 .product--category p {
     color: #000000;
     font-size: 1.3rem;
+}
 
+.product--category .image-overlay-container{
+    height: 270px;
 }
 
 /* .product--category--sortby-select{
@@ -3087,3 +3145,313 @@ input[type=range]:focus::-ms-fill-upper {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+---------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------
+--------                                       All Brands                                        --------
+---------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------- */
+
+.brandTable-detail ul, ol {
+    list-style-type: none;
+}
+
+.brandPage {
+    background: #E5E5E5;    
+}
+
+.brandTable-detail {
+    background: #fff;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 3% 97%;
+    grid-column-gap: 8px;
+    position: relative;
+}
+
+.grid-container::after {
+    position: absolute;
+    content: "";
+    width: 97%;
+    height: 1px;
+    background: #939b9e7c;
+    left: 45px;
+    top: -22px;
+}
+
+.alphabet h3 {
+    font-size: 42px;
+}
+
+.brand-list li {
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.brand-percentage {
+    position: absolute;
+    z-index: 1;
+    left: -10px;
+    top: 16px;
+    font-size: 12px;
+    color: #ffff;
+}
+
+.brand-table {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.brand-percentage {
+    background: #0080D9;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    text-align: center;
+    margin-left: 25px;
+    text-transform: capitalize;
+    top: -10px;
+}
+
+.brand-percentage:after {
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg);
+}
+
+.brand-percentage:before {
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+
+.brand-percentage:before, .brand-percentage:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    background: #0080D9;
+}
+
+.brand-percentage i {
+    font-style: normal;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    z-index: 999;
+    font-size: 10px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 5px;
+    background: #0080D9;
+
+}
+
+.brand-list li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1rem;
+    color: #232323;
+}
+
+
+.alphabet-List-Items ul li a {
+    position: relative;
+    display: block;
+    min-width: 28px;
+    height: 30px;
+    line-height: 18px;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    box-sizing: content-box;
+    color: #000;
+}
+
+.alphabet-List-Items ul li a:after {
+    position: absolute;
+    content: "";
+    background: #3d3b3b;
+    ;
+    width: 1px;
+    height: 60%;
+    right: 0;
+    top: calc(50% - 30%);
+
+}
+
+.brandTable-detail {
+    padding: 20px;
+}
+
+.breadcrumb ul li i {
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.question .search-container{
+    border: 0.5px solid #939B9E;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin: 0 20px;
+}
+
+.question input {
+    background: transparent;
+    border: none;   
+    padding: 3px;
+    border-radius: 10px;
+    flex-grow: 1;
+    color: #939B9E;
+    
+}
+.question input:focus {
+    outline: none;
+}
+
+.allBrand a {
+    margin-right: 20px;
+    color: #fff;
+    background: #FF6000;
+    padding: 10px 20px 10px 20px;
+}
+
+.bg-yellow {
+    background: #FFA800 !important;
+}
+
+.brand-list li {
+    display: block;
+}
+
+@media (min-width: 1199.98px) and (max-width:1238px) {
+
+    .grid-container {
+        grid-template-columns: 11% 86%;
+        grid-column-gap: 10px;
+    }
+
+    .grid-container::after {
+        width: 89%;
+    }
+
+    #brand-part .container {
+        max-width: 671px !important;
+    }
+
+    .brand-list li {
+        display: block;
+    }
+
+    #alphabert-list {
+        margin-left: 400px;
+    }
+
+    .grid-container {
+        margin-left: 4px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+
+    .grid-container {
+        grid-template-columns: 11% 86%;
+        grid-column-gap: 10px;
+    }
+
+    .grid-container::after {
+        width: 89%;
+    }
+
+    .alphabet-List-Items ul li a {
+        min-width: 0;
+    }
+
+    .brand-list li {
+        display: block;
+    }    
+
+    #alphabert-list {
+        margin-left: 0;
+    }   
+    .brand-list li {
+        display: block;
+    }
+}
+
+@media (min-width: 455px) and (max-width: 767px) {
+    .grid-container {
+        grid-template-columns: 11% 86%;
+        grid-column-gap: 10px;
+    }
+
+    .grid-container::after {
+        width: 89%;
+    }
+
+    .alphabet-List-Items ul li a {
+        min-width: 0;
+    }
+
+    .brand-list li {
+        display: block;
+    }
+
+    #alphabert-list {
+        margin-left: 0;
+    }   
+}
+
+
+@media (max-width: 414px) {
+    .grid-container {
+        grid-template-columns: 11% 86%;
+        grid-column-gap: 10px;
+    }
+
+    .grid-container::after {
+        width: 89%;
+    }
+
+    .alphabet-List-Items ul li a {
+        min-width: 0;
+    }
+
+    .brand-list li {
+        display: block;
+    }
+
+    #alphabert-list {
+        margin-left: 0;
+    }    
+}
